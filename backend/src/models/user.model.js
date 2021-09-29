@@ -6,7 +6,9 @@ const { Schema } = mongoose;
 //user"s schema
 const userSchema = new Schema({
     phoneNumber: { type: Number, required: true },
-    services: [{}]
+    status : {type : Boolean, required: true},
+    ongoingServices: [{type: String, required: true}],
+    completedServices: [{type: String, required: true}]
  
 }, {timestamps: true, versionKey: false});
 
