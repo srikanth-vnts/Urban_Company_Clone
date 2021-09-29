@@ -266,3 +266,26 @@ img {
 
   color: #212121;
 }
+/* //////////////// TC-Bottom part /////////////////////////////////////// */
+
+.TC-BottomPartMainDiv {
+  position: absolute;
+  width: 1136px;
+  height: 151px;
+  left: 152px;
+  top: 836px;
+  /* background-color: firebrick; */
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+.TC-BottomPartMainDiv img {
+  /* position: absolute; */
+  width: 272px;
+  height: 151px;
+  /* margin: 9px; */
+
+  /* left: 1016px;
+  top: 836px; */
+}
