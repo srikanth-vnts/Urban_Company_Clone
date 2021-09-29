@@ -1,18 +1,18 @@
-import './App.css';
+import './styles/App.module.css';
+import NavBar from './components/NavBar';
+import DashBoard from './components/DashBoard';
+import Tabs from './components/Tabs';
+import StickTab from './components/StickTab';
 
 function App() {
   return (
-
-    <div className="appMainDiv">
-      <h1>Hello from App.js</h1>
-
-
-
-
-    </div>
-
-
-  );
+    <>
+    <NavBar/>
+    <DashBoard/>
+    <Tabs/>
+    <StickTab/>
+    </>
+  )
 }
 
 export default App;

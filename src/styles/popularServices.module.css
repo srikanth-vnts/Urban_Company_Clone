@@ -1,0 +1,13 @@
+.heading {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 21px 30px;
+  }
+.main{
+    padding: 21px 30px;
+    color: #757575;
+}
+.main_child{
+    border-bottom: 1px dotted #C7C7C7;
+    margin: 14px 0px;
+}

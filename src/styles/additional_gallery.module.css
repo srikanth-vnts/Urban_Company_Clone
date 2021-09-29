@@ -1,0 +1,46 @@
+.heading {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 21px 30px;
+}
+.main img {
+  width: 230px;
+  height: 140px;
+  border-radius: 5px;
+}
+.main_name {
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 0 46px;
+}
+.main {
+  display: flex;
+  overflow-x: hidden;
+  padding-bottom: 25px;
+  position: relative;
+}
+.main_child {
+  margin: 20px;
+  transition: all ease-in-out 500ms;
+  border-radius: 5px;
+}
+.main_child:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 10px rgba(133, 133, 133, 0.658);
+}
+.scrollX {
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 2px;
+  box-shadow: -1px, 1px rgba(0, 0, 0, 0.25);
+  width: 20px;
+  height: 50px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:50px;
+  right:5px;
+  cursor: pointer;
+}
