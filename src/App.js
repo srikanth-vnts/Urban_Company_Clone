@@ -1,12 +1,13 @@
 import './App.css';
+import Homepage from './components/homepage';
 
 function App() {
   return (
 
     <div className="appMainDiv">
-      <h1>Hello from App.js</h1>
+      {/* <h1>Testing App.js</h1> */}
 
-
+      <Homepage />
 
 
     </div>
