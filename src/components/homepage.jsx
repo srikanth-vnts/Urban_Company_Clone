@@ -25,30 +25,38 @@ export default function Homepage() {
 
                         <div className="HP-ASC-LocationBox">
 
-                            <span className="HP-ASC-icon">  <img src="locationIcon.svg" alt="locationPNG" /></span>
+                            <span className="HP-ASC-icon">
+                                <img src="locationIcon.svg" alt="locationPNG" />
+                            </span>
                             <span>
                                 <select id="city" name="city">
                                     <option value="current Location">current Location</option>
                                     <option value="input box">Input Box</option>
-
                                 </select>
                             </span>
 
-                        </div>
+                        </div>  {/* HP-ASC-LocationBox */}
                         <div className="HP-ASC-LocationSearchBox">
 
                             <span className="HP-ASC-searchIcon">
-
-
                                 <img src="searchIcon.svg" alt="searchPNG" />
                             </span>
-                            <span>  <input type="text" placeholder="Search for a service"></input> </span>
-                        </div>
+                            <span>
+                                <input type="text" placeholder="Search for a service"></input>
+                            </span>
+
+                        </div>{/* HP-ASC-LocationSearchBox */}
 
 
-                    </div>
+                    </div> {/* HP-AddressSearchContainer */}
 
+                    <div className="HP-TC-LinkPara">
+                        <h3>
 
+                            <a href=""> Salon for Men</a>, <a href="">Massage for Men</a>, <a href="">Spa for Women</a> etc
+                        </h3>
+
+                    </div> {/* HP-TC-LinkPara */}
 
                 </div>{/* HP-TC-dataContainer */}
 

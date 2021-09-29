@@ -128,10 +128,11 @@ img {
   top: 320px;
 
   background: #ffffff;
+  /* background: red; */
   border-radius: 2px;
   display: flex;
 
-  left: 580px;
+  left: 560px;
 }
 .HP-ASC-searchIcon img {
   position: absolute;
@@ -168,4 +169,32 @@ img {
   border-radius: 4px; */
 
   /* background-color: aquamarine; */
+}
+
+.HP-TC-LinkPara {
+  position: absolute;
+  min-width: 359px;
+  height: 20px;
+  left: 560px;
+  top: 388px;
+
+  font-family: axiforma-semiBold, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.HP-TC-LinkPara a,
+.HP-TC-LinkPara h3 {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+}
+.HP-TC-LinkPara a {
+  text-decoration-line: underline;
 }
