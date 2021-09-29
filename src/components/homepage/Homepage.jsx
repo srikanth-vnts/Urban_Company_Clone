@@ -1,4 +1,5 @@
 import BannerContainer from "./BannerContainer";
+import BestOffers from "./BestOffers";
 import HomepageServiceBox from "./HomePageServiceBox";
 import TCBottomPart from "./TCBottomPart";
 
@@ -9,8 +10,6 @@ export default function Homepage() {
 
     return (
         <div className="homePageMainDiv">
-
-            {/* <h1>Testing Homepage</h1> */}
 
             {/* ////////////////// Top ////////////////////// */}
             <div className="topContainer">
@@ -25,8 +24,16 @@ export default function Homepage() {
 
 
             {/* //////////////////////// Mid part ////////////////////// */}
+            <div className="divider"></div>
+            <div className="midContainer">
+
+                <BestOffers />
+                <div className="divider"></div>
+                <BestOffers />
+                <div className="divider"></div>
 
 
+            </div>{/* midContainer */}
 
 
 

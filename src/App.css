@@ -9,6 +9,7 @@
 body {
   /* width: 1440px;
   height: 790px; */
+  /* background-color: #f0f4f7; */
 }
 
 .appMainDiv {
@@ -24,6 +25,20 @@ img {
 .flex-c {
   display: flex;
   justify-content: center;
+}
+
+.divider {
+  position: absolute;
+  width: 1440px;
+  height: 0px;
+  left: 0px;
+  top: 1067px;
+
+  border: 15px solid #f0f4f7;
+  background-color: #f0f4f7;
+}
+.appMainDiv {
+  /* background-color: red; */
 }
 /* /////////////////////////////Home Page ////////// */
 
@@ -288,4 +303,53 @@ img {
 
   /* left: 1016px;
   top: 836px; */
+}
+
+/* ///////////// HP Middle part ////////////////////////*/
+
+.bestOffersMainDiv h1 {
+  position: absolute;
+  width: 176px;
+  height: 54px;
+  left: 632px;
+  top: 1135px;
+
+  /* font-family: Axiforma; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 51px;
+  text-align: center;
+
+  color: #212121;
+}
+.bestOffersMainDiv p {
+  position: absolute;
+  width: 509px;
+  height: 34px;
+  left: 483px;
+  top: 1189px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: center;
+
+  /* Supporting text for H2 */
+
+  color: #757575;
+}
+
+.bestOffersImageContainer {
+  position: absolute;
+  width: 1136px;
+  height: 149px;
+  left: 152px;
+  top: 1275px;
+
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
 }
