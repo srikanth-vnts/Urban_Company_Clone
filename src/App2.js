@@ -1,10 +1,10 @@
-import './styles/App.module.css';
+// import './styles/App.module.css';
 import NavBar from './components/NavBar';
 import DashBoard from './components/DashBoard';
 import Tabs from './components/Tabs';
 import StickTab from './components/StickTab';
 
-function App() {
+function App2() {
   return (
     <>
     <NavBar/>
@@ -13,6 +13,7 @@ function App() {
     <StickTab/>
     </>
   )
+
 }
 
-export default App;
+export default App2;
