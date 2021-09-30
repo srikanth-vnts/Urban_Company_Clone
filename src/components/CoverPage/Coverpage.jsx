@@ -21,9 +21,13 @@ export default function Coverpage() {
                     <p>Where do you need a service?</p>
                     <select>
                         <option value="">Select your city</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Bangalore">Bangalore</option>
+                        <option value="Chennai">Chennai</option>
                         <option value="Delhi">Delhi</option>
-
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Mumbai">Mumbai</option>
 
                     </select>
 

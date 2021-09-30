@@ -1,3 +1,4 @@
+import MidPart from "../CoverPage/MidPart";
 import Appliances from "./Appliances";
 import BannerContainer from "./BannerContainer";
 import BestOffers from "./BestOffers";
@@ -24,6 +25,7 @@ export default function Homepage() {
                 <BannerContainer />
 
                 <HomepageServiceBox />
+
 
                 <TCBottomPart />
 
