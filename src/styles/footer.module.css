@@ -1,0 +1,9 @@
+.temp,.temp2{
+    height: 25vh;
+    background-color: #424242;
+    position: relative;
+}
+.temp2{
+    height: 50vh;
+    background-color: #000;
+}

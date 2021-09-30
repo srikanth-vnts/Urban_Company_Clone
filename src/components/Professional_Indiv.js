@@ -1,10 +1,9 @@
 import style from "../styles/professional_indiv.module.css";
-import Card from "./Card";
 import logo from "../ImageBase/profes1.png";
 import Comments from "./Comments";
 import Button from "./Button";
 
-let tabs = ["How it Works", "Electricians", "FAQs", "About Electricians"];
+
 
 function Professional_Indiv(props) {
   return (

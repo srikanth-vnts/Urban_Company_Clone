@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import DashBoard from './components/DashBoard';
 import Tabs from './components/Tabs';
 import StickTab from './components/StickTab';
+import Footer from './components/Footer';
 
 function App2() {
   return (
@@ -11,6 +12,7 @@ function App2() {
     <DashBoard/>
     <Tabs/>
     <StickTab/>
+    <Footer/>
     </>
   )
 

@@ -23,5 +23,14 @@
 }
 .button{
     text-align: center;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+    padding-top: -50px;
+    border-top: 1px solid #C7C7C7;
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+}
+.button > button{
+    position: relative;
+    top: -5px;
 }

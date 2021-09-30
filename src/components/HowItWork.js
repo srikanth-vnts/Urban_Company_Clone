@@ -7,12 +7,10 @@ import Card from "./Card"
 
 
 
-let tabs = ["How it Works", "Electricians", "FAQs", "About Electricians"];
-
-function HowItWork() {
+function HowItWork(props) {
   return (
       <Card>
-        <div className={style.title}>How it works</div>
+        <div id={'howitworks_main'} className={style.title}>How it works</div>
         <div className={style.option_tab}>
           <div className={style.option}>
               <img src={option1} alt="logo"  /> Choose the type of service</div>

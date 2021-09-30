@@ -1,12 +1,14 @@
 body{
     font-family: "Axiforma" sans-serif;
     background-color: #f5f5f5;
+    user-select: none;
 }
 .main {
   background-color: #fff;
   position: fixed;
   width: 100%;
   top: 0%;
+  z-index: 10;
 }
 .main_container{
     max-width: 1200px;
