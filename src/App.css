@@ -7,13 +7,13 @@
     Roboto, Helvetica, Arial, sans-serif;
 }
 body {
-  /* width: 1440px;
-  height: 790px; */
+  /* width: 1400px; */
+  /* height: 790px; */
   /* background-color: #f0f4f7; */
 }
 
 .appMainDiv {
-  width: 100%;
+  width: 98.7%;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -30,9 +30,10 @@ img {
 .divider {
   position: absolute;
   width: 1440px;
+  width: 97vw;
   height: 0px;
 
-  border: 15px solid #f0f4f7;
+  border: 10px solid #f0f4f7;
   background-color: #f0f4f7;
   left: 0px;
 }
@@ -45,19 +46,19 @@ img {
 .d3 {
   top: 2045.75px;
 }
-.d3 {
-  /* top: 2534px;top: 2045.75px; */
-}
 .d4 {
-  top: 2985px;
+  top: 2534px;
 }
 .d5 {
-  top: 3331px;
+  top: 2985px;
 }
 .d6 {
-  top: 3498px;
+  top: 3331px;
 }
 .d7 {
+  top: 3498px;
+}
+.d8 {
   top: 3706px;
 }
 
@@ -101,6 +102,7 @@ img {
     rgba(0, 0, 0, 0.75) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  /* max-width: 98.75vw; */
 }
 
 .HP-TC-dataContainer {
@@ -259,16 +261,18 @@ img {
 
 .serviceBoxMainDiv {
   position: absolute;
-  width: 1136px;
-  height: 268px;
+  width: 1040px;
+  height: 225px;
   left: 152px;
   top: 489px;
+  padding-top: 50px;
+  padding-left: 100px;
 
   background: #ffffff;
   box-shadow: 0px 4px 25px 2px rgba(112, 112, 112, 0.15);
   border-radius: 4px;
 
-  padding: 20px;
+  /* padding-top: 20px; */
 }
 
 /* ///////////////// RectangularBox ////////////////////////////*/
@@ -279,6 +283,7 @@ img {
   height: 110px;
   left: 0px;
   top: 0px;
+  /* margin-top: 30px; */
 
   background: #ffffff;
   /* border-radius: 10px solid red; */
@@ -330,6 +335,19 @@ img {
 }
 
 /* ///////////// HP Middle part ////////////////////////*/
+
+.midpartImageContainer {
+  position: absolute;
+  width: 1136px;
+  height: 149px;
+  left: 152px;
+  /* top: 1275px; */
+
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  justify-content: space-around;
+}
 
 .bestOffersMainDiv h1 {
   position: absolute;
@@ -396,15 +414,291 @@ img {
   color: #757575;
 }
 
-.midpartImageContainer {
+.AppliancesMainDiv h1 {
   position: absolute;
-  width: 1136px;
-  height: 149px;
-  left: 152px;
-  /* top: 1275px; */
+  width: 174px;
+  height: 51px;
+  left: 633px;
+  top: 2114px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 51px;
 
   display: flex;
-  justify-content: space-evenly;
-  justify-content: space-between;
-  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  color: #212121;
+}
+.AppliancesMainDiv p {
+  position: absolute;
+  width: 388px;
+  height: 29px;
+  left: 526px;
+  top: 2167px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #757575;
+}
+
+.CustomerReviewMainDiv h1 {
+  position: absolute;
+  width: 474px;
+  height: 51px;
+  left: 483px;
+  top: 2603px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 51px;
+
+  text-align: center;
+
+  color: #212121;
+}
+
+.CustomerReviewMainDiv p {
+  position: absolute;
+  width: 494px;
+  height: 29px;
+  left: 473px;
+  top: 2655px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+
+  text-align: center;
+
+  color: #757575;
+}
+/* ///////////////////////////// live his best //////////////// */
+.LiveBestMainDiv {
+  /* position: absolute; */
+  width: 1440px;
+  height: 328px;
+  left: 0px;
+  top: 3025px;
+
+  background: #ffffff;
+  /* background: red; */
+}
+.LiveBestMainDiv p {
+  position: absolute;
+  width: 382px;
+  height: 88px;
+  left: 152px;
+  top: 3025px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 109px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #212121;
+}
+.LiveBestMainDiv h3 {
+  position: absolute;
+  width: 589px;
+  height: 84px;
+  left: 152px;
+  top: 3125px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 122.5%;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #757575;
+}
+.LiveBestMainDiv button {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+
+  width: 170px;
+  height: 58px;
+  left: 152px;
+  top: 3240px;
+
+  /* H2 */
+
+  background: #212121;
+  border-radius: 12px;
+}
+
+.LiveBestMainDiv span {
+  position: static;
+  width: 151px;
+  height: 34px;
+  left: 24px;
+  top: 12px;
+
+  margin-left: 20px;
+  /* background-color: red; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 122.5%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+
+  flex: none;
+  /* order: 0; */
+  /* flex-grow: 0; */
+  /* margin: 0px 10px; */
+}
+.LiveBestMainDiv img {
+  position: absolute;
+  max-width: 477px;
+  /* min-height: 328px; */
+  max-height: 320px;
+  left: 963px;
+  top: 3025px;
+}
+
+/*/////////////////////// Insurance part ///////////////////////////// */
+.insuranceMainDiv {
+  /* position: absolute; */
+  width: 1440px;
+  height: 152px;
+  left: 0px;
+  top: 3338px;
+
+  background: #ffffff;
+}
+.insuranceMainDiv img {
+  position: absolute;
+  width: 96px;
+  height: 104px;
+  left: 328px;
+  top: 3362px;
+}
+
+.insuranceTitle {
+  position: absolute;
+  width: 430px;
+  height: 29px;
+  left: 459px;
+  top: 3378px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 122.5%;
+  /* or 29px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  /* H2 */
+
+  color: #212121;
+}
+
+.insuranceSubTitle {
+  position: absolute;
+  width: 661px;
+  height: 23px;
+  left: 459px;
+  top: 3426px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 122.5%;
+  /* or 23px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: #a6a6a6;
+}
+.insuranceMainDiv span {
+  color: skyblue;
+}
+.sk-t1 {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  left: 328px;
+  top: 3538px;
+}
+.sk-t2 {
+  position: absolute;
+  width: 387px;
+  height: 29px;
+  left: 512px;
+  top: 3567px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 122.5%;
+  /* or 29px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  /* H2 */
+
+  color: #212121;
+}
+.sk-t3 {
+  position: absolute;
+  width: 627px;
+  height: 23px;
+  left: 512px;
+  top: 3615px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 122.5%;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: #a6a6a6;
+}
+
+/* ////////////////////////// Refer /////////////////// */
+.referMainDiv {
+  position: absolute;
+  width: 1440px;
+  height: 448px;
+  left: 0px;
+  top: 3714px;
+
+  background: #ffffff;
 }
