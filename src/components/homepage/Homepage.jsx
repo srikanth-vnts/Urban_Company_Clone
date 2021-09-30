@@ -6,6 +6,7 @@ import CustomerReview from "./CustomerReview";
 import HomepageServiceBox from "./HomePageServiceBox";
 import Insurance from "./Insurance";
 import LiveBest from "./LiveBest";
+import Refer from "./Refer";
 import SkillIndia from "./SkillIndia";
 import TCBottomPart from "./TCBottomPart";
 
@@ -47,7 +48,7 @@ export default function Homepage() {
                 <div className="divider d7"></div>
                 <SkillIndia />
                 <div className="divider d8"></div>
-
+                <Refer />
 
             </div>{/* midContainer */}
 

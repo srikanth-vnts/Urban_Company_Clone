@@ -694,11 +694,151 @@ img {
 
 /* ////////////////////////// Refer /////////////////// */
 .referMainDiv {
-  position: absolute;
+  /* position: absolute; */
   width: 1440px;
   height: 448px;
   left: 0px;
   top: 3714px;
 
   background: #ffffff;
+}
+.referMainDiv h1 {
+  position: absolute;
+  width: 586px;
+  height: 42px;
+  left: 152px;
+  top: 3823px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 122.5%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #212121;
+}
+.referMainDiv p {
+  position: absolute;
+  width: 584px;
+  height: 46px;
+  left: 152px;
+  top: 3883px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 122.5%;
+  /* or 23px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  /* Blacks/B5 */
+
+  color: #a6a6a6;
+}
+.referInputBoxDiv {
+  position: absolute;
+  width: 464px;
+  height: 52px;
+  left: 152px;
+  top: 3981px;
+
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.referInputBoxDiv input {
+  /* position: absolute; */
+  width: 430px;
+  height: 52px;
+  left: 152px;
+  top: 3981px;
+
+  background: #ffffff;
+  text-decoration: none;
+  border: none;
+  padding-left: 10px;
+}
+.referInputBoxDiv input:focus-visible {
+  border: none;
+  text-decoration: none;
+
+  /* background-color: red; */
+}
+
+.referInputBoxDiv button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+
+  position: absolute;
+  width: 92px;
+  height: 44px;
+  right: 4px;
+  top: 4px;
+
+  /* Blacks/B1 */
+
+  background: #212121;
+  border-radius: 2px;
+}
+.referInputBoxDiv span {
+  position: static;
+  width: 36px;
+  height: 16px;
+  left: 28px;
+  top: 14px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 122.5%;
+  /* or 15px */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+  color: white;
+
+  /* Inside Auto Layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.googleStore {
+  position: absolute;
+  width: 144px;
+  height: 48px;
+  left: 152px;
+  top: 4071px;
+}
+
+.appleStore {
+  position: absolute;
+  width: 144px;
+  height: 48px;
+  left: 312px;
+  top: 4071px;
+}
+
+.referMobile {
+  position: absolute;
+  width: 441px;
+  height: 550px;
+  left: 847px;
+  top: 3799px;
 }
