@@ -1,34 +1,18 @@
+import MidPart from "./MidPart";
 
 export default function BestOffers() {
 
-    const data = [
-        "homepageImages/bestOffers/bestoffers1.svg",
-        "homepageImages/bestOffers/bestoffers2.svg",
-        "homepageImages/bestOffers/bestoffers3.svg",
-        "homepageImages/bestOffers/bestoffers4.svg"
-
+    const data = ["Best Offers", "Hygienic & single-use products | low-contact services"]
+    const url = [
+        "homepageImages/bestOffers/bestoffers1.svg", "homepageImages/bestOffers/bestoffers2.svg", "homepageImages/bestOffers/bestoffers3.svg", "homepageImages/bestOffers/bestoffers4.svg"
     ];
+    const top = "1275px";
 
     return (
 
-        <div className="bestOffersMainDiv">
+        <div className="bestOffersMainDiv ">
 
-            <h1>Best Offers</h1>
-            <p>Hygienic & single-use products | low-contact services</p>
-
-            <div className="bestOffersImageContainer">
-                {
-                    data.map((e) => (
-                        <img src={e} alt="bestOffers" />
-
-                    ))
-                }
-            </div>
-
-
-
-
-
+            <MidPart data={data} url={url} top={top} />
 
         </div>
 
