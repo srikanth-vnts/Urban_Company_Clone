@@ -6,14 +6,9 @@
   font-family: axiforma-semiBold, -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Helvetica, Arial, sans-serif;
 }
-body {
-  /* width: 1400px; */
-  /* height: 790px; */
-  /* background-color: #f0f4f7; */
-}
 
 .appMainDiv {
-  margin-top: 4.2%;
+  /* margin-top: 4.2%; */
   width: 98.7%;
   min-height: 100vh;
   overflow: hidden;
@@ -83,17 +78,6 @@ img {
 }
 
 .bannerImageContainer img {
-  /* width: 1440px;
-  height: 790px; */
-  /* min-width: 100vw;
-  max-width: 100vw; */
-
-  /* min-height: 20.5rem; */
-  /* max-height: 34.5rem; */
-
-  /* width: 1440px;
-  height: 790px; */
-
   position: absolute;
   width: 1440px;
   height: 621px;
@@ -103,12 +87,24 @@ img {
     rgba(0, 0, 0, 0.75) 0%,
     rgba(0, 0, 0, 0) 100%
   );
-  /* max-width: 98.75vw; */
 }
 
-.HP-TC-dataContainer {
-  background-color: aqua;
-  margin-left: 390px;
+.HP-TC-dataContainer h1 {
+  /* background-color: aqua; */
+  position: absolute;
+  width: 686px;
+  height: 72px;
+  left: 377px;
+  top: 216px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 72px;
+  /* identical to box height, or 150% */
+
+  color: #ffffff;
+  /* margin-left: 390px; */
 }
 
 .HP-ASC-LocationBox {
@@ -119,7 +115,6 @@ img {
   top: 320px;
 
   background: #ffffff;
-  /* background: pink; */
   border-radius: 4px;
 }
 .HP-ASC-LocationBox select {
@@ -131,8 +126,9 @@ img {
   /* background: red; */
   border-radius: 4px;
   border: none;
+  border: 1px solid white;
   text-decoration: none;
-  padding: 10px;
+  /* padding: 10px; */
 
   color: #0f0f0f;
   /* width: 106px; */
@@ -169,7 +165,7 @@ img {
   border-radius: 4px;
 }
 
-.HP-TC-HeaderDiv h1 {
+.HP-TC-HeaderDivs h1 {
   position: absolute;
   width: 686px;
   height: 72px;
@@ -195,11 +191,7 @@ img {
   top: 320px;
 
   background: #ffffff;
-  /* background: red; */
   border-radius: 2px;
-  display: flex;
-
-  left: 560px;
 }
 .HP-ASC-searchIcon img {
   position: absolute;
@@ -215,6 +207,12 @@ img {
   left: 2.625px;
   top: 2.625px;
   border-radius: 0px;
+
+  position: absolute;
+  left: 10.94%;
+  right: 10.94%;
+  top: 10.94%;
+  bottom: 10.94%;
 }
 .HP-ASC-LocationSearchBox input {
   width: 560px;
@@ -228,6 +226,22 @@ img {
 
   left: 536px;
   top: 320px;
+
+  position: absolute;
+  width: 68px;
+  height: 16px;
+  left: 72px;
+  top: 20px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+
+  /* Blacks/B5 */
+
+  color: #a6a6a6;
 }
 
 .HP-TC-LinkPara {
@@ -246,6 +260,9 @@ img {
 
   text-decoration: none;
   color: #ffffff;
+
+  left: 536px;
+  top: 388px;
 }
 
 .HP-TC-LinkPara a,
@@ -765,12 +782,12 @@ img {
   text-decoration: none;
   border: none;
   padding-left: 10px;
+  border: 1px solid white;
 }
-.referInputBoxDiv input:focus-visible {
-  border: none;
-  text-decoration: none;
 
-  /* background-color: red; */
+.referInputBoxDiv input :focus-visible {
+  color: -internal-light-dark(red, pink);
+  outline: -webkit-focus-ring-color red 1px;
 }
 
 .referInputBoxDiv button {
@@ -841,12 +858,15 @@ img {
 }
 .flag :nth-child(3) {
   position: absolute;
-  left: 47.22%;
-  right: 47.22%;
-  top: 47.22%;
+  left: 2px;
+  right: 10%;
+  top: 20px;
   bottom: 47.22%;
 
+  width: 10px;
+  height: 10px;
   background: #000080;
+  border-radius: 50%;
 }
 .flag :nth-child(4) {
   position: absolute;
@@ -880,4 +900,135 @@ img {
   height: 550px;
   left: 847px;
   top: 3799px;
+}
+
+/* /////////////////////// Coverpage ///////////////////////// */
+
+.coverpageMainDiv {
+}
+
+.doctorImage {
+  position: absolute;
+  width: 680px;
+  height: 550px;
+  left: 0px;
+  top: 0px;
+  margin-top: 60px;
+}
+
+.coverpageRightDiv {
+  position: absolute;
+  width: 1154px;
+  height: 550px;
+  left: 286px;
+  top: 0px;
+
+  background: linear-gradient(
+    270deg,
+    #000000 39.06%,
+    #000000 69.52%,
+    rgba(0, 0, 0, 0.3) 94.27%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  margin-top: 60px;
+}
+
+.coverpageRightDiv :nth-child(1) {
+  position: absolute;
+  width: 207px;
+  height: 20px;
+  left: 442px;
+  top: 64px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.33em;
+
+  color: #bdbdbd;
+}
+.coverpageRightDiv :nth-child(2) {
+  position: absolute;
+  width: 563px;
+  height: 55px;
+  left: 442px;
+  top: 102px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+.coverpageRightDiv :nth-child(3) {
+  position: absolute;
+  width: 543px;
+  height: 50px;
+  left: 442px;
+  top: 170px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  align-items: center;
+
+  color: #bdbdbd;
+}
+.CP-ServiceBox {
+  position: absolute;
+  width: 332px;
+  height: 135px;
+  left: 442px;
+  top: 256px;
+
+  background: #ffffff;
+  border-radius: 6px;
+}
+.CP-ServiceBox p {
+  /* position: absolute; */
+  width: 238px;
+  height: 26px;
+  left: 0%;
+  top: 0%;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #212121;
+}
+
+.CP-ServiceBox select {
+  /* position: absolute; */
+  width: 299px;
+  height: 45px;
+  left: 442px;
+  top: 256px;
+
+  background: #ffffff;
+  border-radius: 6px;
+}
+
+/* //////////////// Book professional ///////////// */
+
+.BookProfessionalMainDiv {
+  position: absolute;
+  top: 0px;
+  background-color: #138808;
 }

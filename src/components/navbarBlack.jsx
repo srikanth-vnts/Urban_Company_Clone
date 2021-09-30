@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from '../ImageBase/companyLogo.svg';
-import style from '../styles/navBar.module.css';
+import style from '../styles/navbarBlack.module.css';
 
 
-function NavBar() {
+export default function NavbarBlack() {
     return (
         <div className={style.main}>
             <div className={style.main_container}>
@@ -18,5 +18,3 @@ function NavBar() {
         </div>
     )
 }
-
-export default NavBar;

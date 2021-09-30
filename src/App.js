@@ -1,17 +1,38 @@
+import React, { useState } from 'react';
 import './App.css';
+import BookProfessional from './components/CoverPage/BookProfessional';
+import Coverpage from './components/CoverPage/Coverpage';
 import Homepage from './components/homepage/Homepage';
 import NavBar from './components/Navbar';
+import NavbarBlack from './components/navbarBlack';
+
+
 
 function App() {
+  const [isCover, setIsCover] = useState(true);
+
+
   return (
 
     <div className="appMainDiv">
-      {/* <h1>Testing App.js</h1> */}
 
-      <NavBar />
 
-      <Homepage />
-      {/* <HomepageServiceBox /> */}
+      {isCover ? (
+        <>
+          <NavbarBlack />
+          <Coverpage />
+          <BookProfessional />
+        </>
+      ) : (
+        <>
+          <NavBar />
+
+          <Homepage />
+
+        </>
+      )
+
+      }
 
     </div>
 
