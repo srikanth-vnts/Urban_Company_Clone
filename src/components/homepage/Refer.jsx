@@ -10,6 +10,14 @@ export default function Refer() {
 
             <div className="referInputBoxDiv">
 
+                <div className="flag">
+                    <span src="homepageImages/flag1" />
+                    <span src="homepageImages/flag2" />
+                    <span src="homepageImages/flagCircle" />
+                    <span src="homepageImages/flag3" />
+                </div>
+
+
                 <input placeholder="Enter number">
                 </input>
                 <button><span>Send</span></button>

@@ -13,6 +13,7 @@ body {
 }
 
 .appMainDiv {
+  margin-top: 4.2%;
   width: 98.7%;
   min-height: 100vh;
   overflow: hidden;
@@ -794,8 +795,10 @@ img {
   position: static;
   width: 36px;
   height: 16px;
-  left: 28px;
+  left: 420px;
+  /* margin-left: 15rem; */
   top: 14px;
+  /* background-color: red; */
 
   font-style: normal;
   font-weight: 600;
@@ -810,13 +813,49 @@ img {
 
   color: #ffffff;
   color: white;
-
   /* Inside Auto Layout */
 
   flex: none;
   order: 0;
   flex-grow: 0;
   margin: 0px 10px;
+}
+
+.flag :nth-child(1) {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 13.89%;
+  bottom: 63.89%;
+
+  background: #ff9933;
+}
+.flag :nth-child(2) {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 36.11%;
+  bottom: 36.11%;
+
+  background: #eeeeee;
+}
+.flag :nth-child(3) {
+  position: absolute;
+  left: 47.22%;
+  right: 47.22%;
+  top: 47.22%;
+  bottom: 47.22%;
+
+  background: #000080;
+}
+.flag :nth-child(4) {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 63.89%;
+  bottom: 13.89%;
+
+  background: #138808;
 }
 
 .googleStore {
