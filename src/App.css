@@ -6,7 +6,9 @@
   font-family: axiforma-semiBold, -apple-system, BlinkMacSystemFont, Segoe UI,
     Roboto, Helvetica, Arial, sans-serif;
 }
-
+body {
+  overflow-x: hidden;
+}
 .appMainDiv {
   /* margin-top: 4.2%; */
   width: 98.7%;
@@ -1028,9 +1030,84 @@ img {
 /* //////////////// Book professional ///////////// */
 
 .BookProfessionalMainDiv {
+}
+.BookProfessionalMainDiv h1 {
   position: absolute;
-  top: 0px;
-  background-color: #138808;
+  width: 476px;
+  height: 92px;
+  left: 152px;
+  top: 1266px;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: #212121;
+}
+
+.BookProfessionalMainDiv p {
+  position: absolute;
+  width: 486px;
+  height: 29px;
+  left: 152px;
+  top: 1367px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 29px;
+  /* identical to box height */
+
+  color: #757575;
+}
+
+.bookWithMobile {
+  position: absolute;
+  width: 500px;
+  height: 52px;
+  left: 55px;
+  top: 1437px;
+
+  /* background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px; */
+}
+.BookProfessionalMainDiv > img {
+  width: 550px;
+}
+
+.CP-googleStore {
+  position: absolute;
+  width: 144px;
+  height: 48px;
+  left: 152px;
+  top: 1526px;
+}
+
+.CP-appleStore {
+  position: absolute;
+  width: 144px;
+  height: 48px;
+  left: 312px;
+  top: 1526px;
+}
+.Cp-mobile1 {
+  position: absolute;
+  width: 237px;
+  height: 498px;
+  left: 728px;
+  top: 1218px;
+}
+.Cp-mobile2 {
+  position: absolute;
+  width: 237px;
+  height: 498px;
+  left: 1051px;
+  top: 1218px;
 }
 
 /* //////// Coverpage Midpart ///////////////////////// */
@@ -1052,7 +1129,7 @@ img {
   color: #212121;
 }
 
-.CP-para1 {
+.CP-para2 {
   position: absolute;
   width: 367px;
   height: 22px;
@@ -1066,4 +1143,86 @@ img {
   line-height: 22px;
 
   color: #757575;
+}
+.CP-P0 {
+  position: absolute;
+  width: 364px;
+  height: 52px;
+  left: 152px;
+  top: 698px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 52px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+.CP-P1 {
+  top: 795px;
+}
+.CP-P2 {
+  top: 820px;
+}
+.CP-P3 {
+  top: 903px;
+}
+.CP-P4 {
+  top: 928px;
+}
+.CP-P5 {
+  top: 1011px;
+}
+.CP-P6 {
+  top: 1036px;
+}
+
+.CP-I1 {
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  left: 153px;
+  top: 783px;
+}
+.CP-I2 {
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  left: 153px;
+  top: 892px;
+}
+.CP-I3 {
+  position: absolute;
+  width: 71px;
+  height: 71px;
+  left: 152px;
+  top: 998px;
+}
+
+.CP-I4 {
+  position: absolute;
+  width: 524px;
+  height: 339px;
+  left: 728px;
+  top: 696px;
+
+  background: #f5f9fe;
+  border-radius: 10px;
+}
+
+.cp-divider {
+  top: 1128px;
+}
+
+/* ////////////////////// Footer ////////////////////// */
+
+.footerMainDiv {
+  position: absolute;
+  width: 1440px;
+  height: 554px;
+  left: 0px;
+  top: 1691px;
+
+  background: #000000;
 }

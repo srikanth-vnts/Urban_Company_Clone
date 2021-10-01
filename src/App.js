@@ -6,6 +6,7 @@ import MidPart from './components/CoverPage/MidPart';
 import Homepage from './components/homepage/Homepage';
 import NavBar from './components/Navbar';
 import NavbarBlack from './components/navbarBlack';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -22,12 +23,6 @@ function App() {
         <>
           <NavbarBlack />
           <Coverpage />
-          <MidPart />
-
-          <BookProfessional />
-
-
-
 
         </>
       ) : (
@@ -40,7 +35,7 @@ function App() {
       )
 
       }
-
+      <Footer />
     </div>
 
 
