@@ -1,3 +1,5 @@
+import Location from "../Location";
+
 export default function CoverPageTop() {
 
 
@@ -8,6 +10,13 @@ export default function CoverPageTop() {
 
 
             <img className="doctorImage" src="coverpageImages/doctor.svg" alt="doctor" />
+
+            <div className="locationDivs">
+
+                <Location />
+            </div>
+
+
             <div className="coverpageRightDiv">
 
                 <p>URBAN COMPANY</p>
@@ -16,10 +25,11 @@ export default function CoverPageTop() {
                 <p>Experienced, hand-picked Professionals to serve you at your doorstep</p>
 
 
-
+                <Location />
                 <div className="CP-ServiceBox">
                     <p>Where do you need a service?</p>
-                    <select>
+
+                    {/* <select>
                         <option value="">Select your city</option>
                         <option value="Ahmedabad">Ahmedabad</option>
                         <option value="Bangalore">Bangalore</option>
@@ -29,9 +39,11 @@ export default function CoverPageTop() {
                         <option value="Kolkata">Kolkata</option>
                         <option value="Mumbai">Mumbai</option>
 
-                    </select>
+                    </select> */}
 
                 </div>
+
+
 
 
             </div>

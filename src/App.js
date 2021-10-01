@@ -7,11 +7,13 @@ import Homepage from './components/homepage/Homepage';
 import NavBar from './components/Navbar';
 import NavbarBlack from './components/navbarBlack';
 import Footer from './components/Footer/Footer';
+import Temp from './components/Temp';
+import Location from './components/Location';
 
 
 
 function App() {
-  const [isCover, setIsCover] = useState(true);
+  const [isCover, setIsCover] = useState(false);
 
 
   return (
@@ -21,21 +23,30 @@ function App() {
 
       {isCover ? (
         <>
-          <NavbarBlack />
-          <Coverpage />
+          <div>
+            <NavbarBlack />
 
+          </div>
+          <div>
+            <Coverpage />
+
+          </div>
+          <Footer />
+
+
+          {/* <Temp /> */}
         </>
       ) : (
         <>
           <NavBar />
 
           <Homepage />
+          {/* <Footer /> */}
 
         </>
       )
 
       }
-      <Footer />
     </div>
 
 

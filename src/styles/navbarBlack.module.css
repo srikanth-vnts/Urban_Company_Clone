@@ -42,3 +42,9 @@
   padding: 5px 10px;
   border-radius: 5px;
 }
+.loginModal {
+  /* display: none; */
+  /* display: block; */
+  overflow: hidden;
+  transition: 0.5s;
+}
