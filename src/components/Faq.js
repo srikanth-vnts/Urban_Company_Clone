@@ -1,16 +1,14 @@
 import style from "../styles/faq.module.css";
 import Card from "./Card";
 
-let tabs = [
-  `How much advance will I have to pay in case the work requires more than
-one visit`,
-  "Electricians",
-  `In case you need a revisit for the same issue, it gets covered in our 30 - day
-service guarantee policy. Hence it is free of cost.`,
-  "About Electricians",
-];
+import { v4 as uuidv4 } from 'uuid';
+
+
+
 
 function Faq(props) {
+  let faqs_data=props.faqs;
+
   return (
     <>
       <Card>
@@ -18,10 +16,10 @@ function Faq(props) {
           Frequently Asked Questions
         </div>
         <div>
-          {tabs.map((el) => (
-            <div className={style.main}>
+          {faqs_data.map((el) => (
+            <div key={uuidv4()} className={style.main}>
               <div className={style.question}>
-                {el}
+                {el[0]}
                 <span className={style.showAnsButton}>
                   <svg
                     width="12"
@@ -37,7 +35,7 @@ function Faq(props) {
                   </svg>
                 </span>
               </div>
-              <div className={style.answer}>{el}</div>
+              <div className={style.answer}>{el[1]==='ans1'?'':el[1]}</div>
             </div>
           ))}
         </div>

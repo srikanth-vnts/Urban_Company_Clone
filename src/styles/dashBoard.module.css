@@ -2,10 +2,11 @@
     /* height: 50vh; */
     /* background-color: #668; */
     /* background:  ; */
-    background: linear-gradient(to right,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url('../ImageBase/dashboard.jpeg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    /* background: linear-gradient(to right,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url('../ImageBase/dashboard.jpeg'); */
+    /* background: linear-gradient(to right,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: cover !important;
     margin-top: 60px;
 }
 .main > *{

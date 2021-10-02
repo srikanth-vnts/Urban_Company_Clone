@@ -1,24 +1,33 @@
 import style from "../styles/stickTab.module.css";
-import option1 from '../ImageBase/option1.png';
+import {Authcontext} from "../store/auth_context_prof_data"
+import React,{useContext} from "react";
 
 
-let tabs=['How it Works','Electricians','Customer Reviews','FAQs','About Electricians']
+import { v4 as uuidv4 } from 'uuid';
+import ModelOverlay from "./ModelOverlay";
+
 
 function StickTab() {
+
+    
+  let {needfor,ratingStatus,category}=useContext(Authcontext)[0];
+//   console.log(needfor,ratingStatus,category);
+
   return (
     <>
+    <ModelOverlay/>
     <div className={style.main}>
         <div className={style.reqfor}>
-            <div className={style.reqfor_head}>Need an Electrician for:</div>
-            {tabs.map(el=><div className={style.reqfor_child}>{el}</div>)}
+            <div className={style.reqfor_head}>Need an {category} for:</div>
+            {needfor.map(el=><div key={uuidv4()} className={style.reqfor_child}>{el}</div>)}
         </div>
         <div className={style.rating}>
             <div className={style.rating_num}>
-                 <div className={style.rating_green}>&#9733; 4.8<span className={style.sub}>/5</span></div>
-                <div className={style.rating_text}>Based on 16,369</div>
+                 <div className={style.rating_green}>&#9733; {ratingStatus[0]}<span className={style.sub}>/5</span></div>
+                <div className={style.rating_text}>Based on {ratingStatus[1]}</div>
             </div>
             <div className={style.rating_booking_num}>
-                <div className={style.rating_black}>1,49,456</div>
+                <div className={style.rating_black}>{ratingStatus[2]}</div>
                 <div className={style.rating_text}>Bookings done in last 1 year</div>
             </div>
         </div>

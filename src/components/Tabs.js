@@ -4,8 +4,12 @@ import Faq from "./Faq";
 import HowItWork from './HowItWork'
 import Professional from './Professional'
 
+import {Authcontext} from "../store/auth_context_prof_data"
+import React,{useContext} from "react";
 
-let tabs=[['How it Works','howitworks'],['Electricians','professional'],['FAQs','faqs'],['About Electricians','aboutprofsnal']]
+
+
+
 
 let tabSelection=(e)=>{
   let element=e.target;
@@ -30,17 +34,23 @@ let tabSelect_fix = ()=>{
 }
 
 function Tab() {
-  setTimeout(tabSelect_fix,1000)
+  setTimeout(tabSelect_fix,2000)
+  let data=useContext(Authcontext)[0];
+  let route=[data.city,data.category,data.numOfProf]
+  let {faqs,aboutProf}=data;
+
+  let tabs=[['How it Works','howitworks'],[route[1],'professional'],['FAQs','faqs'],['About '+route[1],'aboutprofsnal']]
+
   return (
     <div className={style.tablayout}>
       <div id={'tabSelect'} className={style.tabSelect} onClick={tabSelection}>
     {tabs.map((el,i)=>
-      <div className={i===0? style.current_tab : ''} id={el[1]} >{el[0]}</div>)}
+      <div key={el[1]} className={i===0? style.current_tab : ''} id={el[1]} >{el[0]}</div>)}
     </div>
     <HowItWork/>
-    <Professional/>
-    <Faq/>
-    <AboutProfsnal/>
+    <Professional route={route}/>
+    <Faq faqs={faqs}/>
+    <AboutProfsnal aboutProf={aboutProf} technician={route[1]}/>
     </div>
   )
 }

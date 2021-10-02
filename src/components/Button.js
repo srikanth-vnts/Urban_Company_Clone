@@ -3,7 +3,7 @@ import style from "../styles/button.module.css";
 
 function Button(props) {
   return (
-      <button className={style.button}>{props.children}</button> 
+      <button onClick={props.onClick} className={style.button}>{props.children}</button> 
   );
 }
 
