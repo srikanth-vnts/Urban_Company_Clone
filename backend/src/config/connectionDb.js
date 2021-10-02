@@ -10,7 +10,7 @@ const USERNAME = "urbanclone";
 const PASSWORD = "urbanclone";
 
 //default app port
-const PORT = 3333;
+const PORT =process.env.PORT || 3333;
 
 //default connection url
 const DEFAULT_CONNECTION_STRING = `mongodb+srv://${USERNAME}:${PASSWORD}@cluster0.r35kx.mongodb.net/${DATABASE}?retryWrites=true&w=majority`;
