@@ -3,6 +3,7 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
+
 //user"s schema
 const userSchema = new Schema({
     phoneNumber: { type: Number, required: true },

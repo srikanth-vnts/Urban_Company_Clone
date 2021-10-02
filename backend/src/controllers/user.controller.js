@@ -6,6 +6,7 @@ const router = express.Router();
 const User = require("../models/user.model");
 
 
+
 // <----------------------------------CRUD Operation for users----------------------------------->
 
 router.get("/", async (request, response) => {

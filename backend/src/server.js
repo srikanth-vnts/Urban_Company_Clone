@@ -16,11 +16,17 @@ const professionalController = require("./controllers/professional.controller");
 const userController = require("./controllers/user.controller");
 const servicesController = require("./controllers/services.controller");
 const serviceCardController = require("./controllers/serviceCard.controller");
+const serviceProfessionalController = require("./controllers/serviceProfessional.controller");
+const professionalProfileController = require("./controllers/professionalProfile.controller");
+
 
 app.use("/professional", professionalController);
 app.use("/users", userController);
 app.use("/services", servicesController);
 app.use("/serviceCard", serviceCardController);
+app.use("/serviceProfessional", serviceProfessionalController);
+app.use("/professionalProfile", professionalProfileController);
+
 
 app.listen(PORT, () => console.log(`Urban Comapny is connected successfully to Express. Listening on port ${PORT}.`));
 
