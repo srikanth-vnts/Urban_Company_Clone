@@ -9,11 +9,23 @@ import NavbarBlack from './components/navbarBlack';
 import Footer from './components/Footer/Footer';
 import Temp from './components/Temp';
 import Location from './components/Location';
+import LoginModal from './components/LoginModal';
 
 
 
 function App() {
-  const [isCover, setIsCover] = useState(false);
+  const [isCover, setIsCover] = useState(true);
+
+  const [isLoginModal, setIsLoginModal] = useState(false);
+
+  const checkLoginModal = () => {
+    setIsLoginModal(!isLoginModal);
+
+
+
+
+
+  }
 
 
   return (
@@ -31,7 +43,8 @@ function App() {
             <Coverpage />
 
           </div>
-          <Footer />
+
+          <LoginModal />
 
 
           {/* <Temp /> */}
@@ -41,7 +54,7 @@ function App() {
           <NavBar />
 
           <Homepage />
-          {/* <Footer /> */}
+
 
         </>
       )

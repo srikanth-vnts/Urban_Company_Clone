@@ -40,7 +40,7 @@ img {
 .divider {
   position: absolute;
   width: 1440px;
-  width: 97vw;
+  width: 100vw;
   height: 0px;
 
   border: 10px solid #f0f4f7;
@@ -298,13 +298,15 @@ img {
   left: 152px;
   top: 489px;
   padding-top: 50px;
-  padding-left: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
 
   background: #ffffff;
   box-shadow: 0px 4px 25px 2px rgba(112, 112, 112, 0.15);
   border-radius: 4px;
 
   /* padding-top: 20px; */
+  /* margin-left: 10%; */
 }
 
 /* ///////////////// RectangularBox ////////////////////////////*/
@@ -320,6 +322,9 @@ img {
   background: #ffffff;
   /* border-radius: 10px solid red; */
   border-radius: 4px;
+  text-align: center;
+  /* margin-left: 10%; */
+  /* padding-right: 7%; */
 }
 
 .Hp-Hp-RB-img img {
@@ -341,6 +346,9 @@ img {
   line-height: 16px;
 
   color: #212121;
+  /* margin-left: -20%; */
+  margin-left: 15%;
+  /* background-color: #138808; */
 }
 /* //////////////// TC-Bottom part /////////////////////////////////////// */
 
@@ -364,6 +372,7 @@ img {
 
   /* left: 1016px;
   top: 836px; */
+  /* background-color: #138808; */
 }
 
 /* ///////////// HP Middle part ////////////////////////*/
@@ -379,6 +388,18 @@ img {
   justify-content: space-evenly;
   justify-content: space-between;
   justify-content: space-around;
+}
+.midpartImageContainer img {
+  /* width: 400px; */
+  /* transition-timing-function: ease; */
+  transition: all 0.5s;
+}
+
+.midpartImageContainer img:hover {
+  /* transition: all 1s; */
+  width: 300px;
+  height: 160px;
+  /* height: 110%; */
 }
 
 .bestOffersMainDiv h1 {
@@ -611,7 +632,7 @@ img {
   max-width: 477px;
   /* min-height: 328px; */
   max-height: 320px;
-  left: 963px;
+  left: 940px;
   top: 3025px;
 }
 
@@ -772,18 +793,21 @@ img {
 
   color: #a6a6a6;
 }
-.referInputBoxDiv {
-  position: absolute;
+.referInputBoxDiv img {
+  /* 
   width: 464px;
   height: 52px;
   left: 152px;
   top: 3981px;
-
+  
   background: #ffffff;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; */
+  position: absolute;
+  left: 152px;
+  top: 3981px;
 }
 .referInputBoxDiv input {
   /* position: absolute; */
@@ -914,6 +938,15 @@ img {
   height: 550px;
   left: 847px;
   top: 3799px;
+}
+
+/* ////////////////////// HP Footer ////////////  */
+
+.HP-Footer {
+  position: absolute;
+
+  left: 0px;
+  top: 4162px;
 }
 
 /* /////////////////////// Coverpage ///////////////////////// */
@@ -1242,15 +1275,17 @@ img {
 /* ////////////////////// Footer ////////////////////// */
 
 .footerMainDiv {
-  position: absolute;
   width: 1440px;
   height: 554px;
-  left: 0px;
-  top: 1691px;
 
   background: #000000;
 }
 
+.CP-Footer {
+  position: absolute;
+  left: 0px;
+  top: 1691px;
+}
 /* ///////////////////Location /////////////// */
 
 .locationDivss {
@@ -1263,4 +1298,22 @@ img {
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
+}
+
+/* //////////////// Login Modal /////// */
+
+.LM-ButtonDiv button {
+  left: 16px;
+  top: 8px;
+  background-color: #138808;
+}
+
+.loginmodalModal {
+  background-color: #ff9933;
+  color: red;
+}
+#modal-modal-title,
+#modal-modal-description {
+  background-color: #ff9933;
+  color: red;
 }

@@ -1,4 +1,5 @@
 import MidPart from "../CoverPage/MidPart";
+import Footer from "../Footer/Footer";
 import Appliances from "./Appliances";
 import BannerContainer from "./BannerContainer";
 import BestOffers from "./BestOffers";
@@ -55,7 +56,10 @@ export default function Homepage() {
             </div>{/* midContainer */}
 
 
+            <div className="HP-Footer">
 
+                <Footer />
+            </div>
 
 
         </div > /* homePageMainDiv */

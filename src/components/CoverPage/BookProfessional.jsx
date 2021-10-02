@@ -27,7 +27,7 @@ export default function BookProfessional() {
 
             </div> */}
 
-            <img className="bookWithMobile" src="coverpageImages/bookWithMobile.svg" alt="" />;
+            <img className="bookWithMobile" src="coverpageImages/bookWithMobile.svg" alt="" />
 
             <div className="CP-googleStore"  >
 

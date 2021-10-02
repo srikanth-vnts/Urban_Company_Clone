@@ -1,3 +1,4 @@
+import MobileInput from "../MobileInput";
 
 export default function Refer() {
 
@@ -9,6 +10,12 @@ export default function Refer() {
             <p>Invite your friends to UrbanCompany services. They get Rs. 100 off. You win upto Rs. 5000</p>
 
             <div className="referInputBoxDiv">
+
+                <img src="coverpageImages/bookWithMobile.svg" alt="" />
+
+
+            </div>
+            {/* <div className="referInputBoxDiv">
 
                 <div className="flag">
                     <span src="homepageImages/flag1" />
@@ -23,7 +30,7 @@ export default function Refer() {
                 <button><span>Send</span></button>
 
 
-            </div>
+            </div> */}
 
             <img className="googleStore" alt="google" src="homepageImages/googlestoreIcon.svg"></img>
             <img className="appleStore" alt="apple" src="homepageImages/applestoreIcon.svg" ></img>
