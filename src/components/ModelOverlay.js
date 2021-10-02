@@ -1,21 +1,51 @@
 import AboutService from "../modelComponent/AboutService";
 import PhoneNumber from "../modelComponent/PhoneNumber";
 import style from "../styles/modelOverlay.module.css";
-// import {Authcontext} from "../store/auth_context_prof_data"
-// import React,{useContext} from "react";
 
-// import { v4 as uuidv4 } from 'uuid';
+import React, { useState } from "react";
+import OtpPage from "../modelComponent/OtpPage";
+import AfterOTpTemp from "../modelComponent/AfterOTpTemp";
 
-function ModelOverlay() {
-  //   let {needfor,ratingStatus,category}=useContext(Authcontext)[0];
-  //   console.log(needfor,ratingStatus,category);
-  // document.getElementsByTagName('body').classlist.add(style.block)
+function ModelOverlay(props) {
+  const [screen, setScreen] = useState(1);
+  let showScreen,nextflag = true;
+
+  let cancelOnclick_overlay=(e)=>{
+      if(e.target.className===style.backdrop)
+      props.onCancelbutton();
+  }
+  let goback = () => {
+    setScreen((p) => p - 1);
+  };
+
+  let nextPage = () => setScreen((p) => p + 1);
+
+  if (screen === 1) {
+    showScreen = <AboutService />;
+    nextflag = true;
+  } else if (screen === 2) {
+    showScreen = <PhoneNumber nextPage={nextPage}/>;
+    nextflag = false;
+  } else if (screen === 3) {
+    showScreen = <OtpPage nextPage={nextPage} goback={goback} />;
+    nextflag = false;
+  }
+  else{
+    showScreen = <AfterOTpTemp nextPage={nextPage} />;
+    nextflag = false;
+  }
+
   return (
-    <div className={style.backdrop}>
+    <div className={style.backdrop} onClick={cancelOnclick_overlay}>
       <div className={style.modal}>
         <div className={style.head}>
+          {screen > 1 && (
+            <span className={style.goBackArrow} onClick={goback}>
+              ←
+            </span>
+          )}
           Electrician
-          <span className={style.cancel}>
+          <span className={style.cancel} onClick={props.onCancelbutton}>
             <svg
               width="12"
               height="12"
@@ -30,9 +60,12 @@ function ModelOverlay() {
             </svg>
           </span>
         </div>
-        {/* <AboutService /> */}
-        <PhoneNumber/>
-        <button className={style.heroButton}>Next</button>
+        {showScreen}
+        {nextflag && (
+          <button className={style.heroButton} onClick={nextPage}>
+            Next
+          </button>
+        )}
       </div>
     </div>
   );

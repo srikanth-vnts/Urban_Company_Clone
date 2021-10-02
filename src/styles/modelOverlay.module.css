@@ -37,4 +37,9 @@
     position: absolute;
     bottom: 8px;
     left: 8px;
+    border: 0px;
+}
+.goBackArrow{
+    float: left;
+    font-size: 20px;
 }

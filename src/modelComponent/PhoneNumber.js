@@ -1,8 +1,8 @@
 import style from "./phoneNumber.module.css";
 import flag from "../ImageBase/flag.png";
 
-import React, { useState } from "react";
-import { validate } from "uuid";
+import React, { useState, useEffect } from "react";
+// import { validate } from "uuid";
 
 let x = (
   <svg
@@ -16,15 +16,37 @@ let x = (
   </svg>
 );
 
-function PhoneNumber() {
+function PhoneNumber(props) {
   const [error, seterror] = useState(false);
   const [validInpt, setvalidInpt] = useState(false);
+  const [inp, setInpt] = useState('');
 
+  let continueNext=()=>{
+      localStorage.setItem('phonenum', `${inp}`)
+    //   let xx=localStorage.getItem('phonenum')
+    //   console.log(xx);
+    props.nextPage()
+  }
   let validateInput = (e) => {
-      console.log(e.target.value);
-    seterror(!error);
-    setvalidInpt((p) => !p);
+    setInpt(e.target.value)
   };
+  useEffect(() => {
+    let time=setTimeout(()=>{
+        if(inp.length===0){
+            seterror(false)
+            setvalidInpt(false);
+        }
+        else if(inp.length!==10){
+            seterror(true)
+            setvalidInpt(false);
+        }
+        else{
+            seterror(false)
+            setvalidInpt(true);
+        }
+    }, 1000);
+    return () => clearTimeout(time);
+  }, [inp]);
 
   let inpStyl = error
     ? `${style.inputbar} ${style.inputbarError}`
@@ -37,12 +59,12 @@ function PhoneNumber() {
       <div className={inpStyl}>
         <img src={flag} alt="flag" />
         <span className={style.countryCode}>+91 {x} </span>
-        <input placeholder="Enter number" onChange={validateInput} />
+        <input placeholder="Enter number" onChange={validateInput}/>
         {error && (
           <p className={style.error}>Please enter a valid mobile number</p>
         )}
       </div>
-      <button onClick={validateInput} disabled={!validInpt} className={contBut}>
+      <button  disabled={!validInpt} className={contBut} onClick={continueNext}>
         Continue
       </button>
     </div>
