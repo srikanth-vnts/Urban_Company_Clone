@@ -1,9 +1,10 @@
 import React from 'react';
 import logo from '../ImageBase/companyLogo.svg';
 import style from '../styles/navBar.module.css';
+import LoginModal from './LoginModal';
 
 
-function NavBar() {
+function NavBar({ setIsCover }) {
     return (
         <div className={style.main}>
             <div className={style.main_container}>
@@ -13,8 +14,13 @@ function NavBar() {
                 <div className={style.navText}>
                     <div>Blog</div>
                     <div>Register As A Professional</div>
-                    <div className={style.login}>Login / Sign UP</div>
-                </div></div>
+
+                    <LoginModal setIsCover={setIsCover} />
+
+                    {/* <div className={style.login}>Login / Sign UP</div> */}
+
+                </div>
+            </div>
         </div>
     )
 }

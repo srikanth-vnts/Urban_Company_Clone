@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import './App.css';
-import BookProfessional from './components/CoverPage/BookProfessional';
 import Coverpage from './components/CoverPage/Coverpage';
-import MidPart from './components/CoverPage/MidPart';
 import Homepage from './components/homepage/Homepage';
 import NavBar from './components/Navbar';
 import NavbarBlack from './components/navbarBlack';
-import Footer from './components/Footer/Footer';
-import Temp from './components/Temp';
-import Location from './components/Location';
 import LoginModal from './components/LoginModal';
 
 
@@ -22,9 +17,6 @@ function App() {
     setIsLoginModal(!isLoginModal);
 
 
-
-
-
   }
 
 
@@ -36,22 +28,23 @@ function App() {
       {isCover ? (
         <>
           <div>
-            <NavbarBlack />
-
+            <NavbarBlack setIsCover={setIsCover} />
           </div>
+
           <div>
-            <Coverpage />
-
+            <Coverpage setIsCover={setIsCover} />
           </div>
 
-          <LoginModal />
+          {/* <LoginModal setIsCover={setIsCover} /> */}
 
 
           {/* <Temp /> */}
         </>
       ) : (
         <>
-          <NavBar />
+          <div>
+            <NavBar setIsCover={setIsCover} />
+          </div>
 
           <Homepage />
 

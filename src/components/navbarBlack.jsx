@@ -4,7 +4,7 @@ import style from '../styles/navbarBlack.module.css';
 import LoginModal from './LoginModal';
 
 
-export default function NavbarBlack() {
+export default function NavbarBlack({ setIsCover }) {
 
     const [isOpen, setIsOpen] = useState(false);
 
@@ -35,16 +35,11 @@ export default function NavbarBlack() {
                 <div className={style.navText}>
                     <div>Blog</div>
                     <div>Register As A Professional</div>
-                    {/* <div className={style.login} onClick={toggleMenu} >Login / Sign UP</div> */}
 
-                    <LoginModal />
+
+                    <LoginModal setIsCover={setIsCover} />
                 </div>
-                {/* {
-                    isOpen ? (<LoginModal />) : (
-                        <div className={style.login} onClick={toggleMenu} >Login / Sign UP</div>
 
-                    )
-                } */}
 
             </div>
         </div>

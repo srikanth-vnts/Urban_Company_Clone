@@ -13,11 +13,13 @@
     "@testing-library/user-event": "^12.8.3",
     "bootstrap": "^5.1.1",
     "material-ui-phone-number": "^2.2.6",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-rc.0",
     "react-dom": "^17.0.2",
     "react-phone-input-material-ui": "^2.16.1",
     "react-scripts": "4.0.3",
+    "reactify": "^1.1.1",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

@@ -5,6 +5,7 @@ import Autocomplete from '@mui/material/Autocomplete';
 
 export default function Location() {
     return (
+
         <Autocomplete
             id="country-select-demo"
             sx={{ width: 300 }}
@@ -13,6 +14,8 @@ export default function Location() {
             getOptionLabel={(option) => option.label}
             renderOption={(props, option) => (
                 <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
+
+
                     <img
                         loading="lazy"
                         width="20"

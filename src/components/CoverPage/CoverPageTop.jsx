@@ -1,6 +1,7 @@
 import Location from "../Location";
+import StateLocation from "../StateLocation";
 
-export default function CoverPageTop() {
+export default function CoverPageTop({ setIsCover }) {
 
 
 
@@ -11,10 +12,7 @@ export default function CoverPageTop() {
 
             <img className="doctorImage" src="coverpageImages/doctor.svg" alt="doctor" />
 
-            <div className="locationDivs">
 
-                <Location />
-            </div>
 
 
             <div className="coverpageRightDiv">
@@ -25,10 +23,12 @@ export default function CoverPageTop() {
                 <p>Experienced, hand-picked Professionals to serve you at your doorstep</p>
 
 
-                <Location />
                 <div className="CP-ServiceBox">
-                    <p>Where do you need a service?</p>
 
+
+
+
+                    {/* <Location /> */}
                     {/* <select>
                         <option value="">Select your city</option>
                         <option value="Ahmedabad">Ahmedabad</option>
@@ -41,10 +41,18 @@ export default function CoverPageTop() {
 
                     </select> */}
 
+                    {/* <div className="locationDiv">
+
+                        <Location />
+                    </div> */}
                 </div>
+                <p id="whereNeedSevice"> Where do you need a service?
+                </p>
 
+                <div className="stateLocationDiv">
 
-
+                    <StateLocation setIsCover={setIsCover} />
+                </div>
 
             </div>
 

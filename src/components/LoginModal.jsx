@@ -1,3 +1,4 @@
+// import { useState } from 'react';
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -6,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Paper from "@material-ui/core/Paper";
 
 import MuiPhoneNumber from 'material-ui-phone-number';
+
 
 
 const style = {
@@ -24,7 +26,10 @@ const style = {
 };
 
 
-export default function LoginModal() {
+export default function LoginModal({ setIsCover }) {
+
+
+
     const [open, setOpen] = React.useState(false);
     const [isContinue, setisContinue] = React.useState(true);
     const [country, setCountry] = React.useState('');
@@ -33,7 +38,23 @@ export default function LoginModal() {
 
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-    const handleContinue = () => setisContinue(!isContinue);
+    const handleContinue = () => {
+
+        setisContinue(!isContinue);
+
+    }
+
+    const handleRedirect = () => {
+        //    verification Logic
+
+        //    if verified
+        setIsCover(false);
+
+        console.log("set is cover ", setIsCover)
+        //else
+        // alert("OTP is not correct. Try Again...");
+
+    }
 
     const mobileNumber = country;
 
@@ -50,6 +71,19 @@ export default function LoginModal() {
         console.log("mobile", mobile);
         setisContinue(!isContinue);
 
+        // generate random otp
+
+        generateOtp()
+
+
+    }
+
+    const generateOtp = () => {
+        var min = 1000;
+        var max = 9999;
+        var otp = Math.floor(min + (Math.random() * (max - min)));
+        console.log(otp)
+        alert("Your OTP is " + otp)
     }
 
 
@@ -135,10 +169,15 @@ export default function LoginModal() {
 
                                             {/* <Paper elevation={3} /> */}
 
-                                            <Paper />
-                                            <Paper />
-                                            <Paper />
-                                            <Paper />
+                                            <Paper ><input maxlength="1" className="paperInput"></input>
+                                            </Paper >
+                                            <Paper ><input maxlength="1" className="paperInput"></input>
+                                            </Paper >
+                                            <Paper ><input maxlength="1" className="paperInput"></input>
+                                            </Paper >
+                                            <Paper ><input maxlength="1" className="paperInput"></input>
+                                            </Paper >
+
 
 
                                         </Box>
@@ -146,9 +185,9 @@ export default function LoginModal() {
 
                                     {/*  */}
 
-                                    <p> <span id="resendOtp"  >Resend OTP </span></p>
+                                    <p> <span id="resendOtp" onClick={generateOtp}>Resend OTP </span></p>
 
-                                    <button style={{ background: "black" }} onClick={handleContinue} className="loginModalButton"  >
+                                    <button style={{ background: "black" }} onClick={handleRedirect} className="loginModalButton"  >
                                         Login
                                     </button>
 

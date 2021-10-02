@@ -993,7 +993,7 @@ img {
   line-height: 20px;
   /* identical to box height, or 125% */
 
-  display: flex;
+  /* display: flex; */
   align-items: center;
   letter-spacing: 0.33em;
 
@@ -1042,7 +1042,22 @@ img {
   background: #ffffff;
   border-radius: 6px;
 }
-.CP-ServiceBox p {
+#whereNeedSevice {
+  position: absolute;
+  color: red;
+  color: black;
+  margin-left: -125%;
+  margin-left: 39.5%;
+  margin-top: -12%;
+  margin-top: 23%;
+  width: 200%;
+
+  font-weight: 600;
+  font-size: 18px;
+  font-family: axiforma-semiBold, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+}
+.CP-ServiceBoxs p {
   /* position: absolute; */
   width: 238px;
   height: 26px;
@@ -1055,8 +1070,8 @@ img {
   line-height: 26px;
   /* identical to box height */
 
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
 
   color: #212121;
 }
@@ -1193,7 +1208,7 @@ img {
   left: 257px;
   top: 820px;
 
-  font-family: Axiforma;
+  /* font-family: Axiforma; */
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1288,7 +1303,7 @@ img {
 }
 /* ///////////////////Location /////////////// */
 
-.locationDivss {
+.locationDivs {
   position: absolute;
   width: 300px;
   height: 45px;
@@ -1300,6 +1315,9 @@ img {
   border-radius: 6px;
 }
 
+#country-select-demo {
+  background-color: red;
+}
 /* //////////////// Login Modal /////// */
 
 .LM-ButtonDiv button {
@@ -1441,8 +1459,44 @@ img {
   margin-top: 10%;
 }
 
+.paperInput {
+  width: 28px;
+  height: 28px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid white;
+  font-weight: 600;
+}
+
 .MuiFormControl-root {
   width: 260px;
   margin-right: 20px;
   border: 1px solid red;
+}
+
+/* ////////////Extra ///////////////////// */
+.StateLocationMainDiv {
+  margin-left: -35%;
+  margin-top: 15%;
+}
+
+#city {
+  /* height: 150px; */
+  color: black;
+  width: 110%;
+  height: 110%;
+}
+
+#city :focus {
+  /* size: 3; */
+}
+.city :nth-child(even) {
+  color: black;
+}
+.city :nth-child(odd) {
+  color: black;
+}
+.city :nth-child(2) {
+  font-size: medium;
+  font-weight: 400;
 }

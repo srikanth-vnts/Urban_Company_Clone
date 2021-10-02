@@ -3,7 +3,7 @@ import BookProfessional from "./BookProfessional";
 import CoverPageTop from "./CoverPageTop";
 import MidPart from "./MidPart";
 
-export default function Coverpage() {
+export default function Coverpage({ setIsCover }) {
 
 
 
@@ -11,7 +11,7 @@ export default function Coverpage() {
 
         <div className="coverpageMainDiv">
 
-            <CoverPageTop />
+            <CoverPageTop setIsCover={setIsCover} />
 
             <MidPart />
             <div className="divider cp-divider"></div>
