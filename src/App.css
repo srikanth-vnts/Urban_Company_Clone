@@ -1309,11 +1309,140 @@ img {
 }
 
 .loginmodalModal {
-  background-color: #ff9933;
-  color: red;
+  /* background-color: #ff9933; */
+  /* color: red; */
+  font-family: axiforma-semiBold, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Helvetica, Arial, sans-serif;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
 }
-#modal-modal-title,
+#modal-modal-title {
+  margin-top: 400px;
+}
+#modal-modal-title p {
+  font-size: 23px;
+}
 #modal-modal-description {
-  background-color: #ff9933;
-  color: red;
+  /* background-color: #ff9933; */
+  /* color: red; */
+  margin-top: 20%;
+  margin-left: 5%;
+  /* background-color: red; */
+}
+
+.loginModalButton:hover {
+  background-color: #000000;
+}
+.loginModalButton {
+  width: 265px;
+  height: 48px;
+  left: 40px;
+  /* right: 40px; */
+  top: 224px;
+  margin-top: 50px;
+
+  /* Blacks/B4 */
+
+  background: #858585;
+  border-radius: 4px;
+  color: white;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+
+  /* Blacks/White */
+
+  color: #ffffff;
+  /* margin-left: -3%; */
+}
+
+.modalOtpDiv h1 {
+  /* width: 257px;
+  height: 36px; */
+  left: 56px;
+  top: 103px;
+
+  /* font-style: normal; */
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+.modalOtpDiv p {
+  width: 220px;
+  height: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* left: 101px;
+  top: 147px; */
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  /* line-height: 16px; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Blacks/B4 */
+
+  color: #858585;
+
+  margin-left: 6%;
+}
+.modalOtpDiv p > span {
+  color: blue;
+  top: 147px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  /* line-height: 16px; */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* width: 240px; */
+  margin-left: -50px;
+  margin-top: 18px;
+  cursor: pointer;
+}
+#resendOtp {
+  margin-left: 40%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+#backKey {
+  margin-left: -5%;
+  margin-top: -50px;
+  /* color: red; */
+  font-weight: 800;
+  font-size: xx-large;
+  margin-right: 6%;
+
+  /* display: contents; */
+
+  cursor: pointer;
+}
+.otpPaper {
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+.MuiFormControl-root {
+  width: 260px;
+  margin-right: 20px;
+  border: 1px solid red;
 }

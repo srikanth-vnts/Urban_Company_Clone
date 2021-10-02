@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../ImageBase/companyLogo.svg';
 import style from '../styles/navbarBlack.module.css';
+import LoginModal from './LoginModal';
 
 
 export default function NavbarBlack() {
@@ -13,6 +14,7 @@ export default function NavbarBlack() {
         if (isOpen) {
             // loginModal.style.maxHeight = "0px";//{display:none}
             console.log("toggle: ", isOpen)
+            // <LoginModal />
         }
         else {
             console.log("toggle: ", isOpen)
@@ -33,8 +35,20 @@ export default function NavbarBlack() {
                 <div className={style.navText}>
                     <div>Blog</div>
                     <div>Register As A Professional</div>
-                    <div className={style.login} onClick={toggleMenu} >Login / Sign UP</div>
-                </div></div>
+                    {/* <div className={style.login} onClick={toggleMenu} >Login / Sign UP</div> */}
+
+                    <LoginModal />
+                </div>
+                {/* {
+                    isOpen ? (<LoginModal />) : (
+                        <div className={style.login} onClick={toggleMenu} >Login / Sign UP</div>
+
+                    )
+                } */}
+
+            </div>
         </div>
     )
 }
+
+

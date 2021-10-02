@@ -34,7 +34,8 @@
   margin: 0 12px;
 }
 .navText > div:hover {
-  color: #222;
+  /* color: #222; */
+  /* width: 10%; */
 }
 .login {
   border: 1px solid black;
