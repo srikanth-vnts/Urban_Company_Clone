@@ -229,23 +229,23 @@ img {
   bottom: 10.94%;
 }
 .HP-ASC-LocationSearchBox input {
-  width: 560px;
-  height: 56px;
+  width: 400px;
+  height: 50px;
   border: none;
-  padding-left: 56px;
+  /* padding-left: 10px; */
   outline: 0;
   font-size: 14px;
   line-height: 24px;
   border-radius: 4px;
 
-  left: 536px;
-  top: 320px;
+  /* left: 500px; */
+  /* top: 320px; */
 
   position: absolute;
-  width: 68px;
-  height: 16px;
-  left: 72px;
-  top: 20px;
+  /* width: 68px; */
+  /* height: 16px; */
+  left: 20px;
+  top: 0px;
 
   font-style: normal;
   font-weight: normal;
@@ -255,7 +255,10 @@ img {
 
   /* Blacks/B5 */
 
-  color: #a6a6a6;
+  /* color: #a6a6a6; */
+
+  font-weight: 600;
+  font-size: large;
 }
 
 .HP-TC-LinkPara {
@@ -1499,4 +1502,33 @@ img {
 .city :nth-child(2) {
   font-size: medium;
   font-weight: 400;
+}
+
+/*  /////////////// city /////////////////*/
+
+.cityMainDiv {
+}
+
+.citySelect {
+  font-weight: 600;
+  text-align: center;
+  padding-left: 20px;
+}
+.citySelect :nth-child(even) {
+  font-weight: 600;
+  margin-left: 50px;
+  text-align: left;
+  font-size: medium;
+  /* line-height: 10; */
+}
+.citySelect :nth-child(odd) {
+  font-weight: 600;
+  margin-left: 50px;
+  text-align: left;
+  font-size: medium;
+}
+
+.searchInput {
+  /* background-color: #138808; */
+  /* width: 2000px; */
 }

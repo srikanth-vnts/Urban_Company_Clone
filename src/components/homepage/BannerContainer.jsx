@@ -1,4 +1,20 @@
+import { useState } from "react";
+import City from "./City";
+
 export default function BannerContainer() {
+
+    const [service, setService] = useState('')
+
+
+    const handleChange = (e) => {
+        if (e == 13)
+            alert("hello")
+        else {
+            console.log("hey")
+        }
+
+        setService(...service + e);
+    }
 
 
     return (
@@ -19,25 +35,36 @@ export default function BannerContainer() {
 
                     <div className="HP-ASC-LocationBox">
 
-                        <span className="HP-ASC-icon">
+                        {/* <span className="HP-ASC-icon">
                             <img src="locationIcon.svg" alt="locationPNG" />
-                        </span>
+                        </span> */}
+
+
                         <span>
-                            <select id="city" name="city">
+                            <City />
+
+                            {/* <select id="city" name="city">
                                 <option value="current Location">current Location</option>
                                 <option value="input box">Input Box</option>
-                            </select>
+                            </select> */}
+
+
                         </span>
+
 
                     </div>  {/* HP-ASC-LocationBox */}
                     <div className="HP-ASC-LocationSearchBox">
 
-                        <span className="HP-ASC-searchIcon">
+                        {/* <span className="HP-ASC-searchIcon">
                             <img src="searchIcon.svg" alt="searchPNG" />
-                        </span>
+                        </span> */}
+
                         <span>
-                            <input type="text" placeholder="Search for a service"></input>
+                            <input type="text" placeholder="Search for a service" className="searchInput" onChange={(e) => (handleChange(e))} >
+
+                            </input>
                         </span>
+
 
                     </div>{/* HP-ASC-LocationSearchBox */}
 
