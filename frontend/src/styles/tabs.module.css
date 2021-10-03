@@ -1,0 +1,37 @@
+.tabSelect {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(124, 124, 124, 0.25);
+  
+}
+.tabSelect_active{
+  position:fixed;
+  top: 60px;
+  width: 800px;
+  z-index: 10;
+}
+.current_tab{
+  border-bottom: 4px solid #222;
+}
+
+.tabSelect > * {
+  margin: 0 18px;
+  padding: 15px;
+}
+.tablayout {
+  max-width: 800px;
+  margin: 0 80px;
+}
+.profInCity {
+  color: #212121;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 30px;
+  padding-top: 40px;
+}
+.profInCity_des {
+  color: #757575;
+  font-size: 14px;
+  padding: 24px 30px;
+
+}

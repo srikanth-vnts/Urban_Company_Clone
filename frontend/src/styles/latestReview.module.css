@@ -1,0 +1,36 @@
+.heading {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 21px 30px;
+  }
+.heading_sub{
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+}
+.rating_count{
+    font-size: 18px;
+    color: #757575;
+    font-weight: 500;
+}
+.rating{
+    margin-top: 20px ;
+    color: #39973B;
+    font-size: 40px;
+}
+.rating span{
+    font-size: 25px;
+}
+.button{
+    text-align: center;
+    /* padding: 20px 0; */
+    padding-top: -50px;
+    border-top: 1px solid #C7C7C7;
+    margin-left: 10px;
+    position: relative;
+    top: 15px;
+}
+.button > button{
+    position: relative;
+    top: -5px;
+}

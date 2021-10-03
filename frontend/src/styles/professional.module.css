@@ -1,0 +1,21 @@
+.profInCity {
+    color: #212121;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 30px;
+    padding-top: 40px;
+  }
+  .profInCity_des,.profInCity_num  {
+    color: #757575;
+    font-size: 14px;
+    padding: 24px 30px;
+  }
+  .profInCity_num {
+    padding: 10px 30px;
+  }
+  .prof_head{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 30px;
+  }

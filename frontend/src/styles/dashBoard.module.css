@@ -1,0 +1,25 @@
+.main{
+    /* height: 50vh; */
+    /* background-color: #668; */
+    /* background:  ; */
+    /* background: linear-gradient(to right,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)), url('../ImageBase/dashboard.jpeg'); */
+    /* background: linear-gradient(to right,rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)); */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    background-size: cover !important;
+    margin-top: 60px;
+}
+.main > *{
+    max-width: 1200px;
+    margin: auto;
+    color: #fff;
+}
+.route{
+    padding: 8px;
+}
+.herotext{
+    padding: 88px 0;
+}
+.herotext ul li{
+    margin: 20px;
+}

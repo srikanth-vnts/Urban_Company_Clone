@@ -1,0 +1,16 @@
+.temp,.temp2{
+    /* height: 25vh; */
+    /* background-color: #424242; */
+    /* position: relative; */
+}
+.temp2{
+    /* height: 50vh; */
+    /* background-color: #000; */
+    /* background-image: url('../ImageBase/Footer.svg'); */
+    /* height: fit-content; */
+}
+.temp2 > img{
+    width: 100%;
+    position: relative;
+    bottom: -5px;
+}

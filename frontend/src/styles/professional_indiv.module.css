@@ -1,0 +1,42 @@
+.prof_head{
+    margin-top: 20px;
+    padding: 20px 30px;
+    border-top: 1px solid #757575;
+    display: flex;
+
+}
+
+.prof_pic > img{
+    width: 100px;
+    /* background-color: brown; */
+    width: 97px;
+    height: 97px;
+    border-radius: 50%;
+}
+.prof_details{
+    margin-left: 36px;
+    line-height: 2;
+    font-weight: 500;
+}
+.prof_details_name{
+    font-weight: bold;
+}
+.prof_details_address{
+    color: #757575;
+    font-size: 12px;
+}
+.prof_details_rating,.prof_details_rating_5star {
+    color: #39973B;
+}
+.prof_details_rating > span{
+    color: #212121;
+}
+.prof_details_rating_tab{
+    display: flex;
+}
+.prof_details_rating_5star{
+    margin-left: 25px;
+}
+.button{
+    text-align: center;
+}

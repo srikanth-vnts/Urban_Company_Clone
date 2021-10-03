@@ -1,0 +1,27 @@
+.heading{
+    color: #212121;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 30px;
+    padding-top: 40px;
+}
+
+.main{
+    background-color: #fff;
+    border: 1px solid #A6A6A6;
+    border-radius: 5px;
+    margin:20px;
+    font-weight: 600;
+    padding: 26px 46px;
+}
+.answer{
+    margin-top: 8px;
+    color: #646464;
+}
+.showAnsButton{
+    float: right;
+    /*background-color: #D8D8D8;
+    color: #757575;
+    border-radius: 50%;
+    padding:2px 8px;*/
+}

@@ -1,0 +1,51 @@
+.main {
+  background-color: transparent;
+  background-color: black;
+  position: fixed;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  z-index: 10;
+}
+.main_container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main > * {
+  color: #646464;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.logo > img {
+  width: 142px;
+  margin: 8px 0;
+}
+.navText {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navText > div {
+  margin: 0 12px;
+}
+.navText > div:hover {
+  /* color: #222; */
+  /* width: 10%; */
+}
+.login {
+  border: 1px solid black;
+  border: 1px solid white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.loginModal {
+  /* display: none; */
+  /* display: block; */
+  overflow: hidden;
+  transition: 0.5s;
+}

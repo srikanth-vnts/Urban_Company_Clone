@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+.heading{
+    /* text-align: center; */
+    font-size: 24px;
+    color: #212121;
+    font-weight: 500;
+    margin: 42px 0;
+}
+.tick{
+    position: absolute;
+    left:-10%
+}
+.row1,.row2{
+    position: relative;
+    font-size: 18px;
+    color: #212121;
+    font-weight: 700;
+    margin: 20px 0;
+    width: 350px;
+}
+.subDetail{
+    color: #757575;
+    font-size: 14px;
+    font-weight: 600;
+}
