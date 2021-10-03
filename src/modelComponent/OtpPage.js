@@ -6,9 +6,10 @@ import React, { useState ,useEffect} from "react";
 function OtpPage(props) {
   const [inp, setInpt] = useState(0);
   const [timer, settimer] = useState(30);
-
   let xx=localStorage.getItem('phonenum')
   useEffect(() => {
+  if(timer===28) window.alert(`OTP is ${Math.floor(1000 + Math.random () * 9000)}`)
+
     let time=setTimeout(()=>{
         if(timer>0)
         settimer(p=>p-1)

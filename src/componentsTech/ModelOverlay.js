@@ -6,6 +6,10 @@ import React, { useState } from "react";
 import OtpPage from "../modelComponent/OtpPage";
 import Product from "./Product";
 import Payment from "../modelComponent/Payment";
+import AddressModal from "../modelComponent/AddressModal";
+// import AutocompleteInput from "../modelComponent/AddressModal";
+
+
 
 function ModelOverlay(props) {
   const [screen, setScreen] = useState(1);
@@ -22,7 +26,7 @@ function ModelOverlay(props) {
   let nextPage = () => setScreen((p) => p + 1);
 
   if (screen === 1) {
-    showScreen = <AboutService />;
+    showScreen = <AboutService />;//<AddressModal />;
     nextflag = true;
   } 
   else if(screen === 2){
@@ -42,6 +46,7 @@ function ModelOverlay(props) {
   }
   return (
     <div className={style.backdrop} onClick={cancelOnclick_overlay}>
+      
       <div className={`${style.modal} ${screen===2?style.modal_productPage:''}`}>
         <div className={style.head}>
           {screen > 1 && (
