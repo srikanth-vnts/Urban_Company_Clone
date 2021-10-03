@@ -73,6 +73,8 @@ const CardMain_Reviews = styled.div`
 const Review = styled.div`
   width: 52px;
   display: flex;
+  margin-top:5px;
+  align-items: center;
 `;
 const CardMain2 = styled.div`
   display: flex;
@@ -278,9 +280,10 @@ function Products(props) {
                                     marginLeft: "3px",
                                     color: "green",
                                     fontWeight: "500",
+            
                                   }}
                                 >
-                                  4.5
+                                  {e.review}
                                 </p>
                               </Review>
                               <Review>
@@ -289,12 +292,12 @@ function Products(props) {
                                   style={{
                                     fontSize: "8px",
                                     marginLeft: "5px",
-                                    marginTop: "9.7px",
                                     width: "51px",
                                     color: "#757575",
+                                    marginTop:"1px"
                                   }}
                                 >
-                                  13.5k ratings
+                                  {e.totalReviews} ratings
                                 </p>
                               </Review>
                             </CardMain_Reviews>
@@ -335,6 +338,7 @@ function Products(props) {
                                       color: "#304FFE",
                                       marginTop: "8px",
                                       fontWeight: "bold",
+                                      marginLeft: "3px"
                                     }}
                                   >
                                     ADD
@@ -351,7 +355,7 @@ function Products(props) {
                                       style={{
                                         fontWeight: "500",
                                         color: "#304FFE",
-                                        marginTop: "1px",
+                                        marginTop: "-1.8px",
                                         marginLeft: "-1px",
                                         fontSize: "14px",
                                       }}
@@ -373,7 +377,8 @@ function Products(props) {
                                     color: "white",
                                     marginTop: "-1px",
                                     fontWeight: "500",
-                                    cursor: "pointer",
+                                      cursor: "pointer",
+                                    width: "17px"
                                   }}
                                   onClick={() => {
                                     removeCart(e);
@@ -399,7 +404,8 @@ function Products(props) {
                                     background: "#304FFE",
                                     color: "white",
                                     fontWeight: "700",
-                                    cursor: "pointer",
+                                      cursor: "pointer",
+                                    width: "17px"
                                   }}
                                   onClick={() => {
                                     addCart(e);
@@ -420,7 +426,7 @@ function Products(props) {
                               marginLeft: "12px",
                             }}
                           ></div>
-                          <ul style={{ marginTop: "0px" }}>
+                          <ul style={{ marginTop: "0px",marginLeft:"36px" }}>
                             {e.disclaimers.map((d) => {
                               return (
                                 <li
