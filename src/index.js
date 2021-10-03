@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App2';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom"
+
+import { TechnicianAuthcontextProvider } from "./store/technician_auth_context";
+
+
 
 ReactDOM.render(
+  <BrowserRouter>
   <React.StrictMode>
+    <TechnicianAuthcontextProvider>
     <App />
-  </React.StrictMode>,
+    </TechnicianAuthcontextProvider>
+  </React.StrictMode>
+ </BrowserRouter>,
   document.getElementById('root')
 );
 
