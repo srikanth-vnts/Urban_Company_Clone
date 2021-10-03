@@ -96,7 +96,7 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
 function Products() {
 
-    const { handleCart, cart } = useContext(ProductDetailContext);
+    const { handleCart, cart,handleTotal } = useContext(ProductDetailContext);
     const [card, setCard] = useState([]);
     const [quantity, setQuantity] = useState(0);
    // const [iQuantity, setIQuantity] = useState(0);
@@ -141,6 +141,7 @@ function Products() {
                         let q = quantity + 1;
                         let s = cartPrice + cart[i].price;
                         setCartPrice(s);
+                        handleTotal(s);
                         setQuantity(q);
                         handleCart(cart);
                         console.log(cart)
@@ -368,27 +369,11 @@ function Products() {
             </ProductDiv>
             <div style={{
                 display: 'flex',
-                justifyContent: 'space-between',
+                justifyContent: 'flex-end',
                 width: '100%',
                 visibility: ((cart.length === 0) ? "hidden" : "visible"),
                 boxShadow: "0 -1px 0 0 #e0e0e0",
             }}>
-                <div style={{
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: "center",
-                    borderRadius: "3px",
-                    background: "#241f54",
-                    marginLeft: "10px",
-                    width:"200px",
-                    height: "25px",
-                    marginTop:"4px"
-                }}><p style={{
-                        fontWeight: "bold",
-                    fontSize: "12px",
-                        color: "white",
-                        margin:"0px"
-                    }}>Click to save ₹50 on final bill</p></div>
                 <Link to="/cart" style={{textDecoration:"none"}}>
                 <div style={{
                     display: 'flex',
@@ -398,7 +383,7 @@ function Products() {
                     marginRight: "10px",
                     background: "#304FFE",
                     height: "25px",
-                    marginTop:"4px",
+                    marginTop:"9px",
                     cursor:"pointer"
                 }}>
                     <div style={{
