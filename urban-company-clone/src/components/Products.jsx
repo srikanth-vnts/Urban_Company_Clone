@@ -7,7 +7,8 @@ import Back from "../logos/Back.svg"
 import  Star from "../logos/Star.svg"
 import  Right from "../logos/Right.svg"
 import Close from "../logos/Close.svg"
-import  frame37 from "../logos/Frame37.svg"
+import frame37 from "../logos/Frame37.svg"
+import { Link } from "react-router-dom"
 //,,,
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
      
@@ -82,6 +83,15 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
     flex-direction:column;
     align-items:left;
     `
+
+    const Price = styled.p`
+    margin-top: -5px;
+    margin-bottom: 0px;
+    font-size: 8px;
+    margin-left: 7px;
+    color: black;
+    font-weight: 600;
+    `
    
 
 function Products() {
@@ -122,6 +132,7 @@ function Products() {
     }
 
     function addCart(item) {
+        console.log(cart);
         card.forEach((el) => {
             if (el._id === item._id) {
                 for (let i = 0; i < cart.length; i++){
@@ -146,6 +157,7 @@ function Products() {
                 console.log(cart)
             }
         })
+
     }
 
     function removeCart(item) {
@@ -225,7 +237,7 @@ function Products() {
             <div style={{
                 display: "flex",
                 flexDirection: "column",
-                height: "410px",
+                height: "3000px",
                 width:"350px",
                 overflowY: "scroll"
             }}>
@@ -246,7 +258,9 @@ function Products() {
                                                  <Review>
                                                  <img style={{ width: "9px" }} src={Star} alt="logo.png" />
                                                      <p style={{fontSize: "9px",marginLeft: "3px",color:"green",fontWeight:"500"}}>4.5</p>
-                                                 </Review><Review> <p style={{fontSize: "8px",marginLeft: "5px",marginTop:"9.7px",width: "51px",color:"#757575"}}>13.5k ratings</p></Review></CardMain_Reviews>
+                                                 </Review><Review> <p style={{ fontSize: "8px", marginLeft: "5px", marginTop: "9.7px", width: "51px", color: "#757575" }}>13.5k ratings</p></Review>
+                                             </CardMain_Reviews>
+                                             <Price>₹{e.price }</Price>
                                          </CardMain_1_1>
                                          <Buttons style ={{
                                              borderRight: e.quantity === 0 ? "1px solid #304FFE" : "none",
@@ -375,6 +389,7 @@ function Products() {
                         color: "white",
                         margin:"0px"
                     }}>Click to save ₹50 on final bill</p></div>
+                <Link to="/cart" style={{textDecoration:"none"}}>
                 <div style={{
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -383,7 +398,8 @@ function Products() {
                     marginRight: "10px",
                     background: "#304FFE",
                     height: "25px",
-                    marginTop:"4px"
+                    marginTop:"4px",
+                    cursor:"pointer"
                 }}>
                     <div style={{
                         display: "flex",
@@ -407,6 +423,7 @@ function Products() {
                         Continue
                     </div>
             </div>
+            </Link>
             </div>
             </>
         
