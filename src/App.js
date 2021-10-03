@@ -5,6 +5,8 @@ import Homepage from './components/homepage/Homepage';
 import NavBar from './components/Navbar';
 import NavbarBlack from './components/navbarBlack';
 import LoginModal from './components/LoginModal';
+import AutocompleteInput from './components/endpart/AutocompleteInput';
+import AddressModal from './components/endpart/AddressModal';
 
 
 
@@ -27,13 +29,16 @@ function App() {
 
       {isCover ? (
         <>
-          <div>
+
+          <AddressModal />
+
+          {/* <div>
             <NavbarBlack setIsCover={setIsCover} />
           </div>
 
           <div>
             <Coverpage setIsCover={setIsCover} />
-          </div>
+          </div> */}
 
           {/* <LoginModal setIsCover={setIsCover} /> */}
 

@@ -6,14 +6,14 @@ export default function BannerContainer() {
     const [service, setService] = useState('')
 
 
-    const handleChange = (e) => {
-        if (e == 13)
+    const handleChange = (event) => {
+        if (event.which === 13)
             alert("hello")
         else {
-            console.log("hey")
+            console.log("hey", event.target.value)
         }
 
-        setService(...service + e);
+        setService(...service + event);
     }
 
 

@@ -36,6 +36,10 @@ img {
   display: flex;
   justify-content: center;
 }
+.flex-sb {
+  display: flex;
+  justify-content: space-between;
+}
 
 .divider {
   position: absolute;
@@ -1531,4 +1535,13 @@ img {
 .searchInput {
   /* background-color: #138808; */
   /* width: 2000px; */
+}
+
+/* ///////////////// Address Modal ///////// */
+.AddressTopBar {
+  width: 150%;
+}
+/* .AddressTopBar :nth-child(even) { */
+.AM-InputBox {
+  margin-top: 10px;
 }
