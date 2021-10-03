@@ -11,7 +11,7 @@ import style from '../styles/navBar.module.css';
 function NavBar() {
     // let {settechpageload}=useContext(TechnicianAuthcontext);
     let sett=()=>{
-        window.location.href = '/';
+        window.location.href = '/homepage';
         // settechpageload(false);
     }
   return (

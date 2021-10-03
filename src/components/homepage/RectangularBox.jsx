@@ -14,12 +14,12 @@ export default function RectangularBox(props) {
     const textData = props.textData;
     const altData = props.altData;
     let sett=()=>{
-        settechpageload(true);
+        window.location.href=`./app2/?category=${textData==='Plumber'?'Plumber':'Electricians'}&city=Bangalore`
     }
 
     return (
 
-        // <a style={{textDecoration:"none"}} /*onClick={props.onClick}*/ href="/?category=Electricians&city=Bangalore">
+        // <a style={{textDecoration:"none"}} /*onClick={props.onClick}*/ href="/app2/?category=Electricians&city=Bangalore">
             <div class="Hp-RectangularBox" onClick={sett}>
             <div class="Hp-RB-img">
                 <img src={imageURL} alt={altData} itemscope="" itemprop="image" />
@@ -29,7 +29,7 @@ export default function RectangularBox(props) {
                 <span>{textData}</span>
             </div>
         </div>
-        //  </a>
+        // </a>
 
 
 

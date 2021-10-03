@@ -3,15 +3,16 @@ import React,{useState,useEffect} from "react";
 let url_data = new URLSearchParams(window.location.search)
 
 let proessionDetails = async (g) => {
-    let data = await fetch("http://localhost:3333/serviceProfessional/?category=Electricians");
-    // let data = await fetch(`http://localhost:3333/serviceProfessional/?city=${url_data.get("city")}&category=${url_data.get("category")}`);
+  // console.log(url_data.get('category'));
+    // let data = await fetch("http://localhost:3333/serviceProfessional/?category=Electricians");
+    let data = await fetch(`http://localhost:3333/serviceProfessional/?city=${url_data.get("city")}&category=${url_data.get("category")}`);
     data = await data.json();
     g(data)
     return data;
   };
 let professionalProfileDetails = async (g) => {
-    let data = await fetch("http://localhost:3333/professionalProfile/?category=Electrician");
-    // let data = await fetch(`http://localhost:3333/professionalProfile/?category=${url_data.get("category")}`);
+    // let data = await fetch("http://localhost:3333/professionalProfile/?category=Electrician");
+    let data = await fetch(`http://localhost:3333/professionalProfile/?category=${url_data.get("category")}`);
 
     data = await data.json();
     g(data)

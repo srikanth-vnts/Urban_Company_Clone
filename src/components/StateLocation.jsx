@@ -8,9 +8,7 @@ export default function StateLocation({ setIsCover }) {
 
 
     const handleRedirect = () => {
-        setIsCover(false);
-
-
+        window.location.pathname='./homepage'
     }
 
 

@@ -5,7 +5,7 @@ export default function HomepageServiceBox() {
 
     const data = [
         { "imageURL": "homepageImages/servicesSVGs/ac.svg", "textData": "Ac Service & Repair ", "altData": "ac" },
-        { "imageURL": "homepageImages/servicesSVGs/repair.svg", "textData": "Appliance Repair", "altData": "repair" },
+        { "imageURL": "homepageImages/servicesSVGs/repair.svg", "textData": "Plumber", "altData": "repair" },
         { "imageURL": "homepageImages/servicesSVGs/painters.svg", "textData": "Painters", "altData": "painters" },
         { "imageURL": "homepageImages/servicesSVGs/relocation.svg", "textData": "Relocation Ready Home", "altData": "relocation" },
         { "imageURL": "homepageImages/servicesSVGs/cleaning.svg", "textData": "Cleaning & Disinfection", "altData": "cleaning" },
