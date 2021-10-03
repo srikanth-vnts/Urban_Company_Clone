@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App2';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import { TechnicianAuthcontextProvider } from "./store/technician_auth_context";
+
+
 
 ReactDOM.render(
   <React.StrictMode>
+    <TechnicianAuthcontextProvider>
     <App />
+    </TechnicianAuthcontextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
