@@ -29,21 +29,15 @@ function App() {
 
       {isCover ? (
         <>
-
-          <AddressModal />
-
-          {/* <div>
+          <div>
             <NavbarBlack setIsCover={setIsCover} />
           </div>
 
           <div>
             <Coverpage setIsCover={setIsCover} />
-          </div> */}
-
-          {/* <LoginModal setIsCover={setIsCover} /> */}
+          </div>
 
 
-          {/* <Temp /> */}
         </>
       ) : (
         <>
