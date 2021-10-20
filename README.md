@@ -1,4 +1,4 @@
-# BLUEMERCURY
+# Urban Company
 
 This is a clone of *www.urbancompany.com* website. Urban Company is Asia’s largest online home services platform. The platform helps customers book reliable & high-quality services — beauty treatments, massages, haircuts, home cleaning, handymen, appliance repair, painting, pest control, and more.
 
