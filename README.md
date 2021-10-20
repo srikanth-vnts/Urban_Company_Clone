@@ -88,7 +88,7 @@ git pull origin <branch_name>
 ![Service page](https://miro.medium.com/max/1400/1*BXirUlTBEk_6nhgC09LwTw.png)
 
 
-- Selected Product Page
+- Service Detail Page
   - On this page, we view the detailed information about each service we have and we can add them to the cart.
 
 ![Service Detail Page](https://miro.medium.com/max/3840/1*PBKXm3twjTuYmbUzwpGrAA.png)
