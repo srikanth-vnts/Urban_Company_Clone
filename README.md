@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+# BLUEMERCURY
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a clone of *www.urbancompany.com* website. Urban Company is Asia’s largest online home services platform. The platform helps customers book reliable & high-quality services — beauty treatments, massages, haircuts, home cleaning, handymen, appliance repair, painting, pest control, and more.
 
-## Available Scripts
+<hr/>
 
-In the project directory, you can run:
+### Team (4 Members)
 
-### `npm start`
+- [Srikanth VNTS](https://github.com/srikanth-vnts)
+- [Ankit Kumar](https://github.com/ankitkumar3443)
+- [Md Ali Shananshah](https://github.com/hello-snsa)
+- [Nitesh Kumar Goshwami](https://github.com/Nitesh-Goshwami)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<hr/>
 
-### `npm test`
+### Tech-stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Front-end: HTML, CSS, JS,React <br/>
+- Back-end: Node.js, Express.js, MongoDB <br/>
+- Resources used in this project: Font Awesome, Material Icons, Google fonts <br/>
 
-### `npm run build`
+<hr/>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pre-requisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clone the repo: 
+```
+git clone <repo_link>
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Create branches: 
+```
+git checkout -b <branch_name>
+```
 
-### `npm run eject`
+- Adding the files: 
+```
+git add filename
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Commiting the changes: 
+```
+git commit -m "description"
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Pushing the commits: 
+```
+git push origin <branch_name>
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Pulling the changes:
+```
+git pull origin <branch_name>
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Dependencies used:
+    - cors: ^2.8.5,
+    - express: ^4.17.1,
+    - mongoose: ^5.11.15,
+    - nodemon: ^2.0.12,
+    - react: ^17.0.2,
+    - react-dom: ^^17.0.2,
+    - react-scripts: "4.0.3,
+   
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Webpages along with its features
 
-### Analyzing the Bundle Size
+- Homepage
+  - The landing page looks exactly like the original website with all the links.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  ![homepage](https://miro.medium.com/max/2000/1*Mnjj15tawhZkZG8tatrpyw.png)
+  
+- Sign in/ up Page
+  - We use phone number and OTP to logging in.
+  - Validations and authentication of users from an online database ```Key feature```
 
-### Making a Progressive Web App
+ ![login/signup](https://miro.medium.com/max/3840/1*NTcjV-rDmFPThRqVciHDRw.png) 
+ ![login/signup](https://miro.medium.com/max/3840/1*B5lacfYg9eC5mMzby5q6rg.png) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Service Page
+  - We have a detailed description of the service we have selected with FAQ, reviews, details of the professionals, and many more.
 
-### Advanced Configuration
+![Service page](https://miro.medium.com/max/1400/1*BXirUlTBEk_6nhgC09LwTw.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+- Selected Product Page
+  - On this page, we view the detailed information about each service we have and we can add them to the cart.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Service Detail Page](https://miro.medium.com/max/3840/1*PBKXm3twjTuYmbUzwpGrAA.png)
