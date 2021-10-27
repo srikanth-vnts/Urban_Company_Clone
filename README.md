@@ -8,7 +8,7 @@ This is a clone of *www.urbancompany.com* website. Urban Company is Asia’s lar
 
 - [Srikanth VNTS](https://github.com/srikanth-vnts)
 - [Ankit Kumar](https://github.com/ankitkumar3443)
-- [Md Ali Shananshah](https://github.com/hello-snsa)
+- [Md Ali Shahanshah](https://github.com/hello-snsa)
 - [Nitesh Kumar Goshwami](https://github.com/Nitesh-Goshwami)
 
 
